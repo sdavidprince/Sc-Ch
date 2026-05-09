@@ -1,1 +1,461 @@
-
+{
+  "meta": {
+    "version": "1.1.0",
+    "updated": "2025-05-09",
+    "maintainer": "NaijaSmartHub",
+    "total": 50,
+    "description": "Remote scam pattern database for the Scam Red Flag Checker tool. Each pattern augments the 27 built-in signatures already in the widget."
+  },
+  "patterns": [
+    {
+      "id": "R001",
+      "name": "Binary Options Solicitation",
+      "severity": "critical",
+      "weight": 22,
+      "category": "Binary Options Fraud",
+      "regex": "\\b(binary\\s+option|binary\\s+trade|binary\\s+signal|60\\s+second\\s+trade|put\\s+(or|\\/)\\s+call\\s+(option|trade))\\b",
+      "description": "Binary options trading is banned in many countries and is predominantly used as a vehicle for retail investor fraud."
+    },
+    {
+      "id": "R002",
+      "name": "Fake Mining Contract",
+      "severity": "critical",
+      "weight": 20,
+      "category": "Crypto Mining Scam",
+      "regex": "\\b(cloud\\s+mining\\s+(contract|plan)|buy\\s+(mining\\s+)?(hashrate|hash\\s+power|tera?hash)|guaranteed\\s+mining\\s+(profit|return|payout))\\b",
+      "description": "Fake cloud mining contracts promise guaranteed cryptocurrency from rented computing power that typically does not exist."
+    },
+    {
+      "id": "R003",
+      "name": "Pig Butchering / Sha Zhu Pan",
+      "severity": "critical",
+      "weight": 25,
+      "category": "Romance-Investment Hybrid Scam",
+      "regex": "\\b(forex\\s+mentor|crypto\\s+mentor|trading\\s+guru|i\\s+can\\s+teach\\s+you\\s+(to\\s+)?(trade|invest)|my\\s+(mentor|broker|expert)\\s+(showed|taught)\\s+me)\\b",
+      "description": "Pig butchering scams (sha zhu pan) combine romance fraud with fake investment platforms, luring victims through fake relationships."
+    },
+    {
+      "id": "R004",
+      "name": "Fake Forex Signal Service",
+      "severity": "high",
+      "weight": 15,
+      "category": "Forex Signal Scam",
+      "regex": "\\b(forex\\s+signal(s)?\\s+(group|channel|subscription)|vip\\s+(forex|trading)\\s+signal|accurate\\s+(forex|trading)\\s+signal|\\d+%\\s+accurate\\s+signal)\\b",
+      "description": "Paid signal services that claim unrealistically high accuracy rates are commonly used to defraud traders."
+    },
+    {
+      "id": "R005",
+      "name": "Account Takeover Phishing",
+      "severity": "critical",
+      "weight": 20,
+      "category": "Phishing",
+      "regex": "\\b(your\\s+account\\s+(has\\s+been|was|is)\\s+(hacked|compromised|breached|accessed)|unauthorized\\s+(login|access|sign[\\s-]?in)|security\\s+alert.*click\\s+here)\\b",
+      "description": "Fabricated security alert language used to panic victims into clicking phishing links and surrendering credentials."
+    },
+    {
+      "id": "R006",
+      "name": "Fake Naira / Dollar Flip",
+      "severity": "critical",
+      "weight": 25,
+      "category": "Money Flip Scam",
+      "regex": "\\b(money\\s+flip|cash\\s+flip|double\\s+your\\s+(money|cash|naira|dollars?)|flip\\s+(\\$|\u20a6|#)?\\s*\\d+\\s*(to|and\\s+get)\\s*(\\$|\u20a6|#)?\\s*\\d+|send\\s+(\\$|\u20a6)?\\d+.*receive\\s+(\\$|\u20a6)?\\d+)\\b",
+      "description": "Money flip scams promise to double or multiply funds sent by victims. Money is never returned and contact ceases immediately after payment."
+    },
+    {
+      "id": "R007",
+      "name": "Fake Investment App / Platform",
+      "severity": "high",
+      "weight": 14,
+      "category": "Fake Investment Platform",
+      "regex": "\\b(download\\s+(our|the)\\s+(app|platform|software)\\s+to\\s+(start|begin|invest|trade)|new\\s+(trading|investment)\\s+app.*guaranteed|our\\s+platform\\s+(never|doesn'?t)\\s+lose)\\b",
+      "description": "Fake investment apps display manipulated profits to encourage deposits. Withdrawals are blocked when victims try to cash out."
+    },
+    {
+      "id": "R008",
+      "name": "Impersonation of Nigerian Institutions",
+      "severity": "critical",
+      "weight": 20,
+      "category": "Institutional Impersonation",
+      "regex": "\\b(cbn\\s+(approved|licensed|authorized|regulated)|central\\s+bank\\s+of\\s+nigeria.*official|sec\\s+nigeria.*(certified|approved|licensed)|efcc.*cleared|firs.*verified\\s+payment)\\b",
+      "description": "Fraudulent claims of authorization from Nigerian regulatory bodies (CBN, SEC, EFCC, FIRS) to deceive victims into compliance."
+    },
+    {
+      "id": "R009",
+      "name": "WhatsApp Investment Group Bait",
+      "severity": "high",
+      "weight": 12,
+      "category": "Social Media Scam",
+      "regex": "\\b(join\\s+(our|my)\\s+(whatsapp|telegram)\\s+(group|channel)\\s+(for|to\\s+get).*(signal|profit|investment|tip)|added\\s+to\\s+(a\\s+)?(whatsapp|telegram)\\s+(investment|trading|profit)\\s+(group|channel))\\b",
+      "description": "Scammers add victims to WhatsApp or Telegram groups with fabricated profit screenshots to solicit deposits."
+    },
+    {
+      "id": "R010",
+      "name": "Rug Pull Language",
+      "severity": "critical",
+      "weight": 18,
+      "category": "Crypto Rug Pull",
+      "regex": "\\b(new\\s+token\\s+(launch|listing)|presale\\s+(ends?|closing)\\s+(soon|in\\s+\\d+)|get\\s+(in\\s+)?(early|now)\\s+before\\s+(listing|launch)|100x\\s+(potential|guaranteed)|whitelist\\s+(spot|access)\\s+(limited|ending))\\b",
+      "description": "Language patterns common in cryptocurrency rug pull schemes where developers abandon projects after collecting investor funds."
+    },
+    {
+      "id": "R011",
+      "name": "Fake Government Grant / Stimulus",
+      "severity": "critical",
+      "weight": 20,
+      "category": "Government Impersonation",
+      "regex": "\\b(government\\s+(grant|stimulus|relief|fund|payment|empowerment)\\s+(approved|available|for\\s+you)|you\\s+(qualify|are\\s+eligible)\\s+for\\s+(a\\s+)?(government|federal|state)\\s+(grant|fund|payment)|claim\\s+your\\s+(government|federal)\\s+(grant|stimulus))\\b",
+      "description": "Fake government grant or empowerment fund notices trick victims into paying processing fees for non-existent disbursements."
+    },
+    {
+      "id": "R012",
+      "name": "Ponzi Profit Screenshots",
+      "severity": "high",
+      "weight": 12,
+      "category": "Ponzi Scheme",
+      "regex": "\\b(proof\\s+of\\s+payment|withdrawal\\s+proof|payout\\s+proof|see\\s+(my|our)\\s+(earnings?|profit|withdrawal)|real\\s+(testimony|testimonial).*payment)\\b",
+      "description": "Fabricated payment screenshots shared to manufacture social proof and recruit new depositors into Ponzi schemes."
+    },
+    {
+      "id": "R013",
+      "name": "Fake Job / Recruitment Scam",
+      "severity": "high",
+      "weight": 14,
+      "category": "Job Scam",
+      "regex": "\\b(work\\s+from\\s+home.*earn\\s+(\\$|\u20a6)\\d+|(\\$|\u20a6)\\d+\\s+(per\\s+hour|hourly|daily)\\s+work\\s+from\\s+home|no\\s+experience\\s+required.*earn|hiring\\s+now.*no\\s+interview|pay\\s+(registration|training|kit)\\s+fee\\s+to\\s+(start|apply|work))\\b",
+      "description": "Fake job scams charge victims upfront fees for registration, training kits, or uniforms before disappearing with the payment."
+    },
+    {
+      "id": "R014",
+      "name": "Loan Scam / Upfront Fee",
+      "severity": "critical",
+      "weight": 22,
+      "category": "Loan Scam",
+      "regex": "\\b(loan\\s+(approved|guaranteed)\\s+(without|no)\\s+(credit\\s+check|collateral|guarantor)|get\\s+(instant|immediate)\\s+loan\\s+no\\s+(document|paperwork|check)|pay\\s+(insurance|processing|admin)\\s+fee\\s+(before|to\\s+(receive|get))\\s+(your\\s+)?loan)\\b",
+      "description": "Fake loan approval notices that require upfront fee payment for insurance, processing, or administration before any funds are released."
+    },
+    {
+      "id": "R015",
+      "name": "Scholarship / Education Scam",
+      "severity": "high",
+      "weight": 12,
+      "category": "Scholarship Fraud",
+      "regex": "\\b(full\\s+scholarship.*apply\\s+now|scholarship.*guaranteed\\s+(for|to)|pay\\s+(processing|application)\\s+fee\\s+for\\s+scholarship|international\\s+scholarship.*no\\s+requirements?)\\b",
+      "description": "Fake scholarship or study-abroad offers that collect application or processing fees from victims, then vanish."
+    },
+    {
+      "id": "R016",
+      "name": "Real Estate Deposit Fraud",
+      "severity": "high",
+      "weight": 14,
+      "category": "Property Scam",
+      "regex": "\\b(pay\\s+(initial|small)\\s+deposit\\s+to\\s+(secure|reserve|hold)\\s+(the\\s+)?(property|land|plot|house|apartment)|land\\s+allocation.*pay\\s+now|estate.*guaranteed\\s+(title|document|c\\s+of\\s+o))\\b",
+      "description": "Property or land scams collect deposits to reserve non-existent or multiply-sold plots, then disappear."
+    },
+    {
+      "id": "R017",
+      "name": "SIM Swap / Number Spoofing",
+      "severity": "critical",
+      "weight": 18,
+      "category": "Telecom Fraud",
+      "regex": "\\b(your\\s+(mtn|glo|airtel|9mobile)\\s+(sim|number|line)\\s+(will\\s+be\\s+)?(blocked|deactivated|suspended|barred)|send\\s+your\\s+(nin|bvn)\\s+to\\s+(activate|reactivate|verify)\\s+(your\\s+)?(sim|line|number))\\b",
+      "description": "Telecom-branded phishing messages that trick victims into revealing NIN or BVN to facilitate SIM swap fraud."
+    },
+    {
+      "id": "R018",
+      "name": "Fake Airtime / Data Reseller",
+      "severity": "medium",
+      "weight": 8,
+      "category": "Reseller Scam",
+      "regex": "\\b(become\\s+(a\\s+)?(vtu|airtime|data)\\s+reseller.*pay\\s+(\\$|\u20a6)\\d+|earn\\s+reselling\\s+(airtime|data).*registration\\s+fee|data\\s+reseller\\s+(business|opportunity).*guaranteed\\s+(income|profit))\\b",
+      "description": "Fake VTU/data reseller schemes that charge registration fees for platforms that either do not exist or do not pay."
+    },
+    {
+      "id": "R019",
+      "name": "Crypto Wallet Seed Phrase Phishing",
+      "severity": "critical",
+      "weight": 25,
+      "category": "Crypto Phishing",
+      "regex": "\\b(enter\\s+(your\\s+)?(seed\\s+phrase|recovery\\s+phrase|mnemonic\\s+phrase|12[\\s-]?word|24[\\s-]?word)\\s+(to\\s+)?(verify|restore|recover|sync|connect|link)|share\\s+(your\\s+)?(seed|recovery|mnemonic)\\s+phrase)\\b",
+      "description": "Any request for a wallet seed or recovery phrase is categorically a scam. No legitimate service ever requires this information."
+    },
+    {
+      "id": "R020",
+      "name": "Investment Returns Testimonial Bait",
+      "severity": "high",
+      "weight": 11,
+      "category": "Investment Fraud",
+      "regex": "\\b(i\\s+(invested|deposited)\\s+(\\$|\u20a6)\\d+\\s+and\\s+(received|got|made|earned)\\s+(\\$|\u20a6)\\d+|she\\s+showed\\s+me\\s+how\\s+(she|to)\\s+(makes?|earns?)\\s+(\\$|\u20a6)\\d+\\s+(daily|weekly|per\\s+day)|testimony.*withdrawal.*profit.*(join|contact))\\b",
+      "description": "First-person testimonial scripts designed to create social proof for fraudulent investment platforms through fabricated success stories."
+    },
+    {
+      "id": "R021",
+      "name": "Crypto Wallet Drainer / Approval Phishing",
+      "severity": "critical",
+      "weight": 28,
+      "category": "Crypto Drainer",
+      "regex": "\\b(approve\\s+(this\\s+)?(transaction|request|spending|allowance)|(setApprovalForAll|increaseApproval|permit|permit2|eip-7702|eip7702|delegation).*(sign|approve|confirm)|(sign\\s+(this\\s+)?(message|approval|permit|permit2|delegation|authorization|auth))|unlimited\\s+(allowance|approval|spending)|(approve\\s+.*\\s+spend\\s+your\\s+(tokens?|nft|nft[s]?|assets?))|((token|crypto)\\s+approval\\s+(needed|required|requested)))\\b",
+      "description": "Crypto wallet drainers trick users into signing malicious approvals (Approve, Permit, Permit2, EIP-7702, setApprovalForAll) that grant attackers unlimited spending rights. $83.85M stolen in 2025 via this vector. No legitimate dApp requests unlimited allowances."
+    },
+    {
+      "id": "R022",
+      "name": "Fake Airdrop / Connect Wallet to Claim",
+      "severity": "critical",
+      "weight": 26,
+      "category": "Crypto Airdrop Scam",
+      "regex": "\\b((claim\\s+(your\\s+)?(airdrop|reward[s]?|token[s]?|allocation|bonus))|connect\\s+(your\\s+)?wallet\\s+(to\\s+)?(claim|receive|get|verify|check\\s+eligib)|free\\s+(token|crypto|nft)\\s+(claim|drop|distribution)|claim\\s+now.*eligible\\s+wallets?|airdrop\\s+(claim|live|now|available).*(connect|wallet|verify))\\b",
+      "description": "Fake airdrop sites demand wallet connections to claim non-existent tokens, then drain assets via malicious approvals or seed phrase harvesting. The largest single theft in 2025 was $6.5M via a Permit signature on a fake airdrop site."
+    },
+    {
+      "id": "R023",
+      "name": "Seed Phrase / Private Key Harvesting",
+      "severity": "critical",
+      "weight": 30,
+      "category": "Crypto Credential Theft",
+      "regex": "\\b((import|enter|input|paste|provide|submit).*(seed\\s+phrase|recovery\\s+phrase|secret\\s+phrase|mnemonic|private\\s+key|secret\\s+key|12\\s*word|24\\s*word|12-word|24-word)|wallet\\s+(import|restore|recover|sync|verify).*(phrase|key|seed)|enter\\s+your\\s+(seed|recovery|secret).*(to\\s+(verify|restore|recover|connect|link|sync|continue|proceed))|backup\\s+phrase\\s+(required|needed|verify))\\b",
+      "description": "Any request to enter a wallet seed phrase, recovery phrase, or private key is categorically fraudulent. No legitimate wallet service, exchange, or dApp ever requests this information. This is the #1 crypto theft vector."
+    },
+    {
+      "id": "R024",
+      "name": "AI-Generated Investment / Trading Bot Scam",
+      "severity": "critical",
+      "weight": 24,
+      "category": "AI Investment Fraud",
+      "regex": "\\b((ai\\s+(trading\\s+)?bot|artificial\\s+intelligence\\s+(trading|investing|profit)|ai-powered\\s+(trading|investment|profit)\\s+(system|platform|app|bot|algorithm)|automated\\s+ai\\s+trading|(guaranteed|passive)\\s+ai\\s+(income|profit|return)|chatgpt\\s+(trading|investment|crypto)|ai\\s+(expert|advisor|analyst)\\s+(trading|crypto|forex)))\\b",
+      "description": "AI-powered trading bots and investment systems are a major emerging scam category. The SEC's first pig butchering cases involved fake AI-generated 'investment tips' in WhatsApp groups. AI scams are 4.5x more profitable than traditional fraud."
+    },
+    {
+      "id": "R025",
+      "name": "QR Code Phishing (Quishing)",
+      "severity": "critical",
+      "weight": 22,
+      "category": "QR Code Phishing",
+      "regex": "\\b((scan\\s+(this\\s+)?qr\\s+(code|to|for|with)|scan\\s+(the|this)\\s+code\\s+(with\\s+your\\s+)?(phone|mobile|device|camera)|qr\\s+code.*(verify|login|access|payment|invoice|document|track)|\\bquishing\\b|scan\\s+to\\s+(verify|pay|login|access|download|view|review|sign|authenticate)))\\b",
+      "description": "Quishing (QR phishing) attacks surged 500%+ in 2025. Malicious QR codes in emails, PDFs, and physical stickers bypass email filters and MFA. 73% of people scan QR codes without checking the destination. Average business loss exceeds $1M per incident."
+    },
+    {
+      "id": "R026",
+      "name": "AI Romance / Deepfake Relationship Scam",
+      "severity": "critical",
+      "weight": 25,
+      "category": "AI Romance Scam",
+      "regex": "\\b((deepfake.*(video\\s+call|call|relationship|romance|dating)|ai-generated\\s+(girlfriend|boyfriend|partner|profile|photo|video|voice)|voice\\s+clone.*(romance|dating|relationship)|synthetic\\s+(identity|media|video|voice).*dating|i\\s+(can'?t|cannot)\\s+meet\\s+(in\\s+person|you).*but.*(video|call)|i\\s+(love|miss)\\s+you.*(invest|crypto|trade|profit|platform).*within\\s+\\w+\\s+(days?|weeks?)))\\b",
+      "description": "AI romance scams use deepfake video calls, voice cloning, AI-generated photos, and LLM chatbots to maintain dozens of simultaneous fake relationships. A Chicago man lost $70K after AI-assisted video calls. INTERPOL reports these scams now operate from West African scam compounds."
+    },
+    {
+      "id": "R027",
+      "name": "WhatsApp / Telegram Investment Club Scam",
+      "severity": "critical",
+      "weight": 23,
+      "category": "Social Media Investment Scam",
+      "regex": "\\b((whatsapp|telegram)\\s+(investment|trading|profit|wealth)\\s+(group|club|channel|community)|(ai\\s+wealth|lane\\s+wealth|zenith\\s+wealth|morocoin|berge\\s+blockchain).*group|group\\s+(admin|member|leader).*\\d+%\\s+(daily|weekly|monthly)\\s+(return|profit|roi)|stock\\s+(tip|recommendation).*whatsapp|security\\s+token\\s+(offering|sto).*(group|club|whatsapp|telegram))\\b",
+      "description": "WhatsApp and Telegram investment clubs are a top vector for organized fraud. The SEC's $14M case involved groups like AI Wealth, Lane Wealth, and AIIEF/Zenith using AI-generated tips to build trust before promoting fake platforms and STOs."
+    },
+    {
+      "id": "R028",
+      "name": "Fake Job Offer with Malware / Skills Test",
+      "severity": "critical",
+      "weight": 20,
+      "category": "Job Scam",
+      "regex": "\\b((download|install|run)\\s+(this\\s+)?(app|software|tool|program|installer).*(skills?\\s+test|assessment|interview|task)|remote\\s+work.*(install|download).*\\s+(tool|app|software)|complete\\s+(this\\s+)?(test|assessment|task).*(download|install|run)|job\\s+offer.*(crypto|wallet|exchange|blockchain).*(download|install|setup)|fake\\s+hiring.*(npm|python|developer|devops|blockchain|solidity))\\b",
+      "description": "Fake job scams now distribute malware disguised as skills tests or interview tools. DPRK IT workers and scam compounds use this to infect developer machines, steal private keys, and conduct supply chain attacks. LinkedIn job offers were used to spread wallet drainer malware."
+    },
+    {
+      "id": "R029",
+      "name": "Celebrity Deepfake / Endorsement Scam",
+      "severity": "critical",
+      "weight": 24,
+      "category": "Celebrity Impersonation",
+      "regex": "\\b((elon\\s+musk|musk|jeff\\s+bezos|bill\\s+gates|warren\\s+buffett|richard\\s+branson|mark\\s+zuckerberg).*\\s+(double\\s+(your|my)|crypto\\s+giveaway|giving\\s+away|send\\s+.*get\\s+.*back|investment\\s+platform|trading\\s+system)|celebrity\\s+endorse(d|sement).*crypto|deepfake.*(elon|musk|bezos|celebrity).*(crypto|bitcoin|giveaway|invest)|verified\\s+celebrity\\s+crypto\\s+(giveaway|investment))\\b",
+      "description": "Celebrity deepfake scams use AI-generated videos and images of Elon Musk, Jeff Bezos, and others to promote fake crypto giveaways and investment platforms. Deepfake scam instances surged 700% in 2025. The 'Stable Genesis' scam used fake celebrity endorsements with Bitcoin vanity addresses."
+    },
+    {
+      "id": "R030",
+      "name": "Fake E-Signature / Document Phishing",
+      "severity": "high",
+      "weight": 18,
+      "category": "Document Phishing",
+      "regex": "\\b((docusign|adobe\\s+sign|DocuSign|acrobat\\s+sign).*(review|sign|complete|document|contract|agreement).*qr|scan\\s+to\\s+(sign|review|complete|verify)\\s+(document|contract|agreement|pdf)|your\\s+(document|contract|agreement)\\s+(is\\s+)?ready\\s+to\\s+(sign|review)|e-signature\\s+(required|needed|pending|requested)|pdf\\s+attachment.*qr\\s+code.*(login|verify|access)))\\b",
+      "description": "Fake e-signature phishing uses PDFs with embedded QR codes that lead to credential-harvesting sites impersonating DocuSign, Adobe Sign, and Microsoft 365. These attacks bypass text-based email filters and have targeted medical, automotive, education, energy, and financial sectors."
+    },
+    {
+      "id": "R031",
+      "name": "Pig Butchering / Wrong Number Initiation",
+      "severity": "critical",
+      "weight": 22,
+      "category": "Pig Butchering",
+      "regex": "\\b((wrong\\s+(number|person|contact|text|msg)|sorry\\s+(wrong|mistaken|incorrect)\\s+(number|person|contact)|is\\s+this\\s+(still|)\\s*(\\w+\\s*)\\?*(\\s*from\\s*(the\\s+)?(dating\\s+site|app|linkedin|instagram|event|conference))|hi\\s+\\w+\\s*,\\s*(this\\s+is\\s+)?\\w+\\s*from\\s*(tinder|bumble|hinge|linkedin|the\\s+party|the\\s+event|we\\s+met)|(thought|believed)\\s+this\\s+was\\s+(\\w+'s|someone\\s+else's)\\s+number)\\b",
+      "description": "Pig butchering scams frequently begin with an 'accidental' wrong number text or message on WhatsApp. Scammers then pivot to relationship building over weeks before introducing fake investment platforms. Combined losses from pig butchering exceeded $75 billion globally."
+    },
+    {
+      "id": "R032",
+      "name": "Fake Wallet Sync / Verification",
+      "severity": "critical",
+      "weight": 26,
+      "category": "Crypto Wallet Phishing",
+      "regex": "\\b((sync|verify|validate|reconcile|upgrade|update|secure|restore|connect)\\s+(your\\s+)?(wallet|account|metamask|trust\\s+wallet|coinbase\\s+wallet|ledger|trezor).*(to\\s+(continue|proceed|avoid|prevent|secure|access|restore|complete))|wallet\\s+(synchronization|verification|validation|upgrade|security\\s+check)\\s+(required|needed|requested|due|pending)|(urgent|important|action\\s+required).*(wallet|metamask|trust).*(sync|verify|upgrade|connect|restore))\\b",
+      "description": "Fake wallet sync and verification pages are a primary vector for crypto phishing. These sites harvest seed phrases and private keys by claiming the wallet needs to be synced, verified, or upgraded. MetaMask and Trust Wallet are the most impersonated brands."
+    },
+    {
+      "id": "R033",
+      "name": "AI Business Email Compromise (BEC)",
+      "severity": "critical",
+      "weight": 22,
+      "category": "Business Email Compromise",
+      "regex": "\\b((urgent\\s+(wire|payment|transfer|invoice).*(ceo|cfo|executive|president|director|founder)|voice\\s+clone.*(ceo|executive).*wire\\s+transfer|ai-generated.*(email|voice).*(invoice|payment|wire|transfer|vendor)|(invoice|payment)\\s+(details|account)\\s+changed.*(urgent|asap|immediately|today)|fake\\s+vendor.*(payment|invoice|wire).*(new\\s+account|updated\\s+bank|different\\s+account)))\\b",
+      "description": "AI-powered Business Email Compromise (BEC) attacks reached $2.77 billion in losses across 21,442 incidents in 2024 (FBI IC3). Attackers use AI-generated emails and voice cloning of executives to authorize fraudulent wire transfers. 82.6% of phishing emails now contain AI-generated content."
+    },
+    {
+      "id": "R034",
+      "name": "Fake Crypto Staking / Restaking / Liquid Staking",
+      "severity": "critical",
+      "weight": 20,
+      "category": "DeFi Scam",
+      "regex": "\\b((liquid\\s+staking|restaking|re-staking|stake\\s+.*earn\\s+.*(apy|apr|yield|reward)|deposit\\s+.*(stake|restake).*\\d+%\\s+(apy|apr|yield)|(eigenlayer|lido|rocket\\s+pool|pendle).*(fake|scam|unauthorized|not\\s+official).*(stake|deposit|restake)|guaranteed\\s+staking\\s+(reward|return|yield|apy)|stake\\s+your\\s+(eth|btc|usdt|usdc|sol).*(guaranteed|risk-free|insured|protected).*(return|yield|profit)))\\b",
+      "description": "Fake staking, restaking, and liquid staking platforms promise unrealistic APY/APR yields. Scammers create clones of legitimate protocols like EigenLayer, Lido, and Pendle to steal deposits. The 'Guaranteed' keyword is a definitive red flag \u2014 no DeFi yield is ever guaranteed."
+    },
+    {
+      "id": "R035",
+      "name": "Fake DeFi Protocol / DApp Interface",
+      "severity": "critical",
+      "weight": 23,
+      "category": "DeFi Phishing",
+      "regex": "\\b((connect\\s+wallet.*(claim|swap|trade|farm|pool|stake|bridge|lend|borrow|mint|provide\\s+liquidity)|claim\\s+your\\s+(rewards?|yield|fees?|incentive|bonus|airdrop).*(from|on)\\s+(uniswap|aave|compound|curve|balancer|sushi|1inch|pendle|lido|eigenlayer|raydium|jupiter)|(uniswap|aave|compound|curve|balancer|sushi).*(v3|v4|version\\s+\\d|upgrade|migration|claim|reward).*(connect|wallet|sign)|fake\\s+(dapp|dex|defi).*(interface|frontend|connect|wallet)))\\b",
+      "description": "Deceptive dApp interfaces impersonate Uniswap, Aave, Compound, Curve, and other protocols. Users connect wallets to fake 'claim rewards' or 'migrate' pages and sign malicious approvals. 11 cases exceeded $1M in 2025. Permit and Permit2 signatures accounted for 38% of large-case losses."
+    },
+    {
+      "id": "R036",
+      "name": "Recovery Scam / Fund Retrieval Service",
+      "severity": "critical",
+      "weight": 22,
+      "category": "Recovery Scam",
+      "regex": "\\b((crypto\\s+(recovery|retrieval|reclaim|tracing|tracking)|recover\\s+(your|my|lost|stolen)\\s+(crypto|bitcoin|eth|usdt|funds|money|assets?)|fund\\s+(recovery|retrieval|reclaim).*(service|company|expert|specialist|team)|lost\\s+crypto.*recover|hire\\s+(a\\s+)?(hacker|recovery\\s+expert|crypto\\s+tracer).*(recover|retrieve|get\\s+back)|(chargeback|payback|claimjustice|fortsolution|funds-recovery|capitalrecovery).*(crypto|bitcoin|scam|fraud|lost))\\b",
+      "description": "Recovery scams target victims who have already lost money to fraud, promising to recover lost crypto for an upfront fee. FBI seized MyChargeBack, Payback Ltd, and ClaimJustice domains in 2024. Most 'recovery' services are themselves fraudulent."
+    },
+    {
+      "id": "R037",
+      "name": "Fake NPM / Developer Tool / Supply Chain",
+      "severity": "critical",
+      "weight": 20,
+      "category": "Supply Chain Attack",
+      "regex": "\\b((npm\\s+(install|package|library|dependency).*(phishing|compromise|malware|backdoor|drain)|malicious\\s+(npm|pypi|package|dependency|library).*(steal|harvest|exfiltrate|drain|wallet|private\\s+key|env|credential)|supply\\s+chain.*(npm|package|library).*(attack|compromise|exploit)|(compromised|fake|malicious)\\s+(wallet|ledger|connect\\s+kit|frontend).*(npm|package|update|library)))\\b",
+      "description": "Supply chain attacks target developers through malicious npm packages, compromised wallet SDKs, and fake developer tools. The Ledger Connect Kit hack and subsequent copycat attacks stole millions by injecting drainer code into legitimate frontend interfaces."
+    },
+    {
+      "id": "R038",
+      "name": "'Wrong Number' Romance / Friendship Pivot",
+      "severity": "high",
+      "weight": 18,
+      "category": "Social Engineering",
+      "regex": "\\b((wrong\\s+number|sorry\\s+.*wrong\\s+(person|number|contact)).*(but\\s+.*(you\\s+seem|nice|interesting|friendly|kind|attractive|beautiful|handsome)|since\\s+we\\s+(are|'re)\\s+(talking|chatting|texting).*(let\\s+me|i\\s+(can|could)|do\\s+you|would\\s+you|are\\s+you)|(how\\s+are\\s+you|what\\s+do\\s+you\\s+do|where\\s+are\\s+you\\s+from).*(interested\\s+in|invest|crypto|trade|forex|stocks?)|nice\\s+to\\s+(meet|connect).*(i\\s+(am|m)\\s+(a\\s+)?(trader|investor|entrepreneur|business\\s+(owner|person)|crypto\\s+(enthusiast|investor))))\\b",
+      "description": "After the initial 'wrong number' contact, scammers pivot to friendship or romance, then introduce investment opportunities. The conversation flow from accidental contact to crypto/forex/trading discussion is a hallmark of organized pig butchering operations."
+    },
+    {
+      "id": "R039",
+      "name": "Fake Mining Hardware / Hashpower Sale",
+      "severity": "high",
+      "weight": 16,
+      "category": "Fake Mining Scam",
+      "regex": "\\b((buy|purchase|order)\\s+(antminer|whatsminer|avalon|bitmain|mining\\s+(rig|machine|hardware|equipment|device|farm)).*(now|today|discount|deal|bulk|wholesale)|mining\\s+(rig|machine|hardware)\\s+for\\s+sale.*(btc|bitcoin|crypto).*(delivery|shipping)|guaranteed\\s+mining\\s+(profit|return|payout|output|hashrate)|(cloud\\s+mining|mining\\s+contract).*(roi|return|profit|guarantee).*(days?|weeks?|months?))\\b",
+      "description": "Fake mining hardware sales and cloud mining contracts are common scams targeting aspiring crypto miners. Products are never delivered after payment. Whatsminer Pro and similar sites take payments for non-existent equipment, particularly targeting African markets."
+    },
+    {
+      "id": "R040",
+      "name": "Lottery / Sweepstakes / Prize Scam",
+      "severity": "high",
+      "weight": 18,
+      "category": "Prize Scam",
+      "regex": "\\b((congratulations?\\s+.*(won|selected|chosen|qualified)|you\\s+(have\\s+)?won\\s+(a\\s+)?(lottery|jackpot|prize|sweepstake|grant|fund|award|bonus|reward)|claim\\s+your\\s+(prize|winnings|jackpot|lottery|award).*(fee|tax|processing|insurance|legal|delivery)|(euro|uk|us|canada|australia)\\s+lottery.*winner|international\\s+(lottery|sweepstake)\\s+(winner|draw|result).*(fee|payment|tax)))\\b",
+      "description": "Lottery and sweepstakes scams inform victims they have won prizes they never entered, then request upfront fees for processing, taxes, or delivery. Kaspersky detected over 414,000 'Nigerian' style scam emails in 2024, many using lottery themes with attached PDFs."
+    },
+    {
+      "id": "R041",
+      "name": "Fake Charity / Disaster Relief / Donation",
+      "severity": "high",
+      "weight": 16,
+      "category": "Charity Scam",
+      "regex": "\\b((donate\\s+(now|today|urgently).*(disaster|earthquake|flood|hurricane|war|crisis|relief|victim|refugee)|charity\\s+(scam|fraud|fake).*(donation|fund|pledge|contribution)|(urgent|emergency)\\s+(appeal|donation|fund).*(victim|disaster|crisis|relief|support).*(crypto|bitcoin|eth|usdt|bank|wire)|fake\\s+(charity|ngo|foundation).*(donate|contribute|support|fund).*(crypto|bitcoin|eth|usdt))\\b",
+      "description": "Fake charity scams exploit natural disasters, wars, and crises to solicit donations that never reach intended recipients. Crypto donations are particularly targeted due to irreversible transactions. Scammers create fake NGOs and foundations with professional-looking websites."
+    },
+    {
+      "id": "R042",
+      "name": "Tax Refund / Rebate / HMRC-IRS Impersonation",
+      "severity": "critical",
+      "weight": 20,
+      "category": "Government Impersonation",
+      "regex": "\\b((tax\\s+(refund|rebate|return|overpayment|credit|relief).*(claim|apply|eligible|qualified|approved|pending|process)|hmrc|irs.*(refund|rebate|return|credit|stimulus).*(claim|check|verify|confirm|direct|immediate)|(income\\s+tax|vat|gst).*(refund|return|rebate).*(you\\s+(are|have)|eligible|claim)|government\\s+(tax|revenue).*(refund|payment|credit|benefit).*(confirm|verify|claim|apply)))\\b",
+      "description": "Tax refund scams impersonate HMRC, IRS, and other revenue services during tax season. Victims are directed to phishing sites to 'claim' refunds, harvesting banking details and personal information. These peak in January-April globally."
+    },
+    {
+      "id": "R043",
+      "name": "Fake Security Alert / Account Verification",
+      "severity": "critical",
+      "weight": 20,
+      "category": "Security Alert Phishing",
+      "regex": "\\b((unusual\\s+(activity|login|access|transaction|sign[-\\s]?in).*(detected|noticed|found|flagged)|suspicious\\s+(activity|login|access|transaction).*(account|wallet|profile|device)|your\\s+(account|wallet|profile).*(has\\s+been|was|is)\\s+(locked|suspended|restricted|limited|flagged|compromised)|(verify|confirm|secure|restore|unlock|reactivate)\\s+your\\s+(account|wallet|profile).*(immediately|now|urgent|within|before|24\\s*hours|expires?)|security\\s+(alert|warning|notice|update).*(required|needed|action\\s+required|immediately))\\b",
+      "description": "Fabricated security alerts create urgency to trick victims into clicking phishing links. These impersonate banks, crypto exchanges, email providers, and social media platforms. 90% of QR code attacks use security alert impersonation as the lure."
+    },
+    {
+      "id": "R044",
+      "name": "Advance Fee for Non-Existent Service",
+      "severity": "critical",
+      "weight": 22,
+      "category": "Advance Fee Fraud",
+      "regex": "\\b((pay|send|wire|transfer).*(fee|payment|charge|cost).*(before|prior\\s+to|in\\s+advance|upfront|first).*(receive|get|obtain|access|release|process|complete|deliver)|(processing|administrative|insurance|legal|handling|shipping|customs|visa|registration).*(fee|charge|payment).*(required|needed|must\\s+be\\s+paid|upfront|advance)|(no\\s+(upfront|advance).*(fee|payment|charge).*but.*(small|initial|first).*(fee|payment|deposit)))\\b",
+      "description": "Any request for upfront payment before service delivery is a classic advance fee fraud indicator. This pattern underlies loan scams, job scams, scholarship scams, inheritance scams, and recovery scams. Legitimate services rarely demand full payment before any deliverable."
+    },
+    {
+      "id": "R045",
+      "name": "Time Pressure / Countdown / Expiring Offer",
+      "severity": "high",
+      "weight": 14,
+      "category": "Pressure Tactics",
+      "regex": "\\b((act\\s+(now|fast|quickly|immediately)|urgent|hurry|limited\\s+(time|spot|slot|space|offer)|offer\\s+(expires?|ending|closes?).*(today|soon|hours?|minutes?|soon|midnight|24\\s*hrs?)|(final|last|exclusive)\\s+(chance|offer|call|warning|notice|reminder)|countdown\\s+timer|only\\s+\\d+\\s+(spot|slot|space|position).*(left|remaining)|before\\s+(it\\s+)?(expires?|gone|too\\s+late|closes?|ends?)))\\b",
+      "description": "Artificial time pressure is a universal manipulation tactic across all scam categories. Countdown timers, limited spots, and expiring offers bypass rational decision-making. Scam Sniffer data shows rushed users are significantly more likely to sign malicious approvals."
+    },
+    {
+      "id": "R046",
+      "name": "Unsolicited Investment Opportunity / Cold Contact",
+      "severity": "high",
+      "weight": 12,
+      "category": "Cold Outreach Scam",
+      "regex": "\\b((i\\s+(noticed|saw|found|came\\s+across).*(your\\s+profile|you\\s+(on|through|via))|reached\\s+out\\s+(to|because)|came\\s+across\\s+your\\s+(post|profile|account|page).*(and\\s+(thought|wanted|decided))|would\\s+you\\s+be\\s+(open|interested).*(opportunity|invest|passive\\s+income|side\\s+(income|hustle)|earning)|(i\\s+have\\s+(a\\s+)?(special|exclusive|private|limited).*(opportunity|offer|deal|investment).*(for\\s+you)))\\b",
+      "description": "Unsolicited investment opportunities via social media DMs, comments, or cold messages are a primary scam vector. Pig butchering, Ponzi schemes, and fake trading platforms all begin with seemingly innocent cold contact."
+    },
+    {
+      "id": "R047",
+      "name": "Fake Review / Social Proof / Testimonial",
+      "severity": "high",
+      "weight": 10,
+      "category": "Social Proof Manipulation",
+      "regex": "\\b((i\\s+(invested|deposited|sent|started\\s+with).*(\\$|\u20a6)\\d+.*(and\\s+(got|made|received|earned|withdrew).*(\\$|\u20a6)\\d+.*(in|within|after).*(day|week|hour)|thank\\s+(you|god).*(platform|investment|program|trader|mentor|broker))|(real|genuine|verified)\\s+(testimony|testimonial|review|result|payout).*(screenshot|proof|image|picture|video)|proof\\s+of\\s+(payment|withdrawal|earning|profit).*(join|contact|dm|whatsapp|telegram|link))\\b",
+      "description": "Fabricated testimonials and payment screenshots are used across Ponzi schemes, fake investment platforms, and recovery scams to manufacture social proof. The 'Prosperity Partners' $25M Ponzi used WhatsApp groups filled with fake success stories to recruit 585+ investors."
+    },
+    {
+      "id": "R048",
+      "name": "EIP-7702 / Account Abstraction Delegation Scam",
+      "severity": "critical",
+      "weight": 27,
+      "category": "Next-Gen Crypto Scam",
+      "regex": "\\b((eip-7702|eip7702|eip_7702|account\\s+abstraction|delegation\\s+(request|signature|transaction)|delegate\\s+(control|execution|access|authority).*(wallet|account|eoa)|upgrade\\s+your\\s+(wallet|account).*(eip-7702|7702|smart\\s+account|erc-4337|4337)|(sign\\s+.*delegation|delegation\\s+.*sign).*(wallet|account|upgrade)))\\b",
+      "description": "EIP-7702 delegation scams emerged after the Ethereum Pectra upgrade. Attackers trick users into signing delegation requests that hand over account control to malicious smart contracts. Two cases exceeded $1M in August 2025 using this vector. This is an evolving, highly technical threat."
+    },
+    {
+      "id": "R049",
+      "name": "NFT Marketplace Listing / Zero-ETH Bid Scam",
+      "severity": "critical",
+      "weight": 24,
+      "category": "NFT Scam",
+      "regex": "\\b((list\\s+your\\s+nft.*(for\\s+)?(0\\s*eth|zero|free|gasless)|sign\\s+.*(listing|approval|marketplace).*(blur|opensea|looksrare|x2y2|magiceden|foundation)|(bulk\\s+list|bulk\\s+approve).*(nft|collection|item).*(signature|sign|approval)|nft\\s+(listing|sale).*(signature|approve|sign).*(blur|opensea).*(root|bulk|all)|verify\\s+your\\s+nft\\s+(collection|ownership).*(sign|approve|listing)))\\b",
+      "description": "NFT signature phishing tricks users into signing bulk listing approvals that allow attackers to 'purchase' NFTs for 0 ETH. The Blur marketplace bulk-listing feature was specifically targeted. $1.23M in Uniswap V3 NFTs were stolen via setApprovalForAll in a single 2025 case."
+    },
+    {
+      "id": "R050",
+      "name": "Fake Shipping / Delivery / Customs Fee",
+      "severity": "high",
+      "weight": 16,
+      "category": "Shipping Scam",
+      "regex": "\\b((your\\s+(package|parcel|shipment|delivery|order).*(has\\s+arrived|is\\s+(held|detained|stuck|delayed|pending)|customs\\s+(hold|clearance|fee|duty|tax))|pay\\s+(customs\\s+duty|import\\s+tax|clearance\\s+fee|shipping\\s+fee|delivery\\s+charge).*(release|receive|deliver|process)|(dhl|fedex|ups|usps|aramex).*(package|delivery|shipment).*(fee|tax|duty|payment|customs).*(required|needed|pending)|track\\s+your\\s+(package|parcel|shipment).*(qr\\s+code|scan|link|fee|payment))\\b",
+      "description": "Fake delivery notifications with QR codes or payment demands for customs fees are a major quishing vector. USPS was the most-phished brand in 2024-2025 with 67,707+ phishing sites. Victims pay non-existent fees or have credentials harvested."
+    }
+  ]
+}
