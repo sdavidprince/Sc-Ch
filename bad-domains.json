@@ -1,1 +1,1159 @@
-
+{
+  "meta": {
+    "version": "1.1.0",
+    "updated": "2025-05-09",
+    "maintainer": "NaijaSmartHub",
+    "total": 126,
+    "description": "Known scam, phishing, and fraud domains compiled from community reports, FTC filings, SEC alerts, EFCC advisories, and scam-reporting platforms. Add new entries at the bottom \u2014 keep alphabetical order per category.",
+    "sources": [
+      "FTC Consumer Sentinel",
+      "SEC Investor Alerts",
+      "EFCC Nigeria",
+      "ScamWarners.com",
+      "Action Fraud UK",
+      "NaijaSmartHub community reports",
+      "FBI IC3 Internet Crime Complaint Center",
+      "Interpol Cybercrime Directorate",
+      "UK Financial Conduct Authority (FCA)",
+      "PhishDestroy",
+      "Sygnia Cybersecurity",
+      "NASAA (North American Securities Administrators Association)"
+    ]
+  },
+  "domains": [
+    {
+      "domain": " pancakeswap-claim.finance",
+      "category": "DeFi / Airdrop Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-08-20",
+      "source": "ScamWarners",
+      "notes": "Fake PancakeSwap airdrop claim. Connect wallet and drain all tokens. Uses .finance TLD to appear legitimate. Targets BNB Chain users."
+    },
+    {
+      "domain": "1inch-exchange.win",
+      "category": "DEX Phishing",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-09-10",
+      "source": "1inch Network Warning",
+      "notes": "Phishing clone of 1inch DEX aggregator. .win TLD variant used for typosquatting. Swaps intended transactions for malicious token approvals."
+    },
+    {
+      "domain": "8figure-trade.com",
+      "category": "Fake Trading Platform",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-11-02",
+      "source": "ScamWarners",
+      "notes": "Reported by multiple victims. Blocks withdrawals above $500."
+    },
+    {
+      "domain": "aave-v4-upgrade.com",
+      "category": "DeFi Phishing",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-11-05",
+      "source": "Aave Community Alert",
+      "notes": "Phishing site claiming Aave v4 upgrade. Users must 'migrate' positions. Drains deposited assets and approves malicious token spend."
+    },
+    {
+      "domain": "adobe-creative-renewal.net",
+      "category": "Software Subscription Phishing",
+      "severity": "high",
+      "confidence": "high",
+      "reported": "2024-08-18",
+      "source": "Adobe Security",
+      "notes": "Fake Adobe Creative Cloud renewal page. Harvests payment details and account credentials. Targets creative professionals and businesses."
+    },
+    {
+      "domain": "ai-profit-system.net",
+      "category": "AI Investment Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-12-18",
+      "source": "FTC",
+      "notes": "Claims AI algorithm generates 3% daily. No regulatory registration found."
+    },
+    {
+      "domain": "ai-wealth.club",
+      "category": "Fake Investment Club",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2025-12-22",
+      "source": "SEC Enforcement Action",
+      "notes": "AI Wealth Inc. WhatsApp investment club. Part of $14M SEC case. Ran Jan-June 2024. Promoted fake AI-generated investment tips and SCT security token."
+    },
+    {
+      "domain": "almaxfinancialsolution.com",
+      "category": "Recovery Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-07-01",
+      "source": "New Jersey Bureau of Securities",
+      "notes": "Impersonated a registered NJ broker-dealer to scam investors seeking recovery. Claimed to be a recovery intelligence firm. Used phony testimonials and stock photos. Demanded crypto payments."
+    },
+    {
+      "domain": "amazon-refund-secure.com",
+      "category": "E-commerce Phishing",
+      "severity": "high",
+      "confidence": "high",
+      "reported": "2024-11-20",
+      "source": "PhishTank",
+      "notes": "Phishing site impersonating Amazon. Targets users with fake refund notifications. Harvests credit card and banking credentials. High-volume distribution via email/SMS."
+    },
+    {
+      "domain": "apple-id-locked-verification.com",
+      "category": "Apple ID Phishing",
+      "severity": "high",
+      "confidence": "high",
+      "reported": "2024-08-25",
+      "source": "Apple Security",
+      "notes": "Apple ID phishing page. Claims account locked for verification. Harvests Apple ID credentials and payment information. Targets iOS users globally."
+    },
+    {
+      "domain": "arbitrum-distribution.io",
+      "category": "Layer 2 / Airdrop Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-08-05",
+      "source": "Arbitrum Foundation",
+      "notes": "Fake Arbitrum ARB token distribution. Claims unclaimed tokens available. Drains all Arbitrum-connected wallets. Uses .io for tech legitimacy."
+    },
+    {
+      "domain": "autotradefx.io",
+      "category": "Forex Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-10-05",
+      "source": "FCA Warning List",
+      "notes": "FCA-listed unlicensed firm. Domain registered 3 weeks before launch."
+    },
+    {
+      "domain": "balancer-fi-pools.com",
+      "category": "DeFi Phishing",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-11-25",
+      "source": "Balancer Labs",
+      "notes": "Phishing site impersonating Balancer DeFi protocol. Fake liquidity pool migration. Drains all token balances on connection."
+    },
+    {
+      "domain": "base-chain-rewards.com",
+      "category": "Layer 2 / Rewards Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-11-10",
+      "source": "Coinbase/Base Official",
+      "notes": "Fake Base L2 rewards distribution. Claims early user rewards. Drains entire wallet on Base and Ethereum mainnet. Not affiliated with Coinbase."
+    },
+    {
+      "domain": "bergev.org",
+      "category": "Fake Crypto Trading Platform",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2025-12-22",
+      "source": "SEC Enforcement Action",
+      "notes": "Berge Blockchain Technology fake platform established June 2022. Part of $14M social media investment scam. Promoted via AI Wealth and Lane Wealth WhatsApp groups. Currently delinquent."
+    },
+    {
+      "domain": "bestbitcoininvestment.com",
+      "category": "Bitcoin Investment Fraud",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-09-14",
+      "source": "SEC Investor Alert",
+      "notes": "Promises 15% weekly ROI. Multiple withdrawal complaints filed."
+    },
+    {
+      "domain": "binance-giveaway.cc",
+      "category": "Crypto Giveaway Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-09-15",
+      "source": "Binance Official Warning",
+      "notes": "Impersonates Binance exchange. Fake Elon Musk/crypto celebrity giveaway. Send crypto to receive double back \u2014 classic giveaway scam. Uses .cc TLD for evasion."
+    },
+    {
+      "domain": "binaryoptions.com",
+      "category": "Binary Options Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2023-04-01",
+      "source": "SEC",
+      "notes": "Binary options retail trading is banned in EU, UK, Australia and Canada."
+    },
+    {
+      "domain": "bitcapitalx.com",
+      "category": "Unauthorized Crypto Broker",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2025-10-13",
+      "source": "FCA Warning List",
+      "notes": "UK FCA-listed unauthorised firm. Claims address at Tower Hill, London. No regulatory registration. Targeting UK investors with unlicensed crypto/financial services."
+    },
+    {
+      "domain": "bitcoindoubler24.com",
+      "category": "Bitcoin Doubler Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-08-22",
+      "source": "NaijaSmartHub",
+      "notes": "Classic doubler Ponzi. Pays early investors from new deposits until collapse."
+    },
+    {
+      "domain": "blockchainverifywallet.com",
+      "category": "Crypto Phishing",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-11-30",
+      "source": "PhishTank",
+      "notes": "Phishing clone of blockchain.com. Harvests seed phrases under guise of verification."
+    },
+    {
+      "domain": "capitalfxpro.com",
+      "category": "Forex Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-07-09",
+      "source": "ASIC",
+      "notes": "ASIC-listed unlicensed foreign exchange dealer."
+    },
+    {
+      "domain": "capitalrecovery.io",
+      "category": "Recovery Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2025-11-10",
+      "source": "Scam Tracking Database",
+      "notes": "Recovery scam using .io domain for tech credibility illusion. Promises crypto asset recovery. No regulatory oversight. Upfront fee model."
+    },
+    {
+      "domain": "cashflipmaster.net",
+      "category": "Money Flip Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-10-14",
+      "source": "NaijaSmartHub",
+      "notes": "Money flip operation. Promises 4x return within 24 hours."
+    },
+    {
+      "domain": "cbn-grants-disbursement.org",
+      "category": "Government Impersonation",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-09-01",
+      "source": "CBN Nigeria Warning",
+      "notes": "Impersonates Central Bank of Nigeria. Claims COVID-19 or business grants available. Harvests BVN, banking details, and personal data for identity theft."
+    },
+    {
+      "domain": "chase-secure-verify.com",
+      "category": "Bank Phishing",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-11-12",
+      "source": "Chase Security",
+      "notes": "Phishing clone of Chase Bank. Harvests online banking credentials and personal information. Part of large-scale banking phishing campaign."
+    },
+    {
+      "domain": "cirkortrading.com",
+      "category": "Fake Crypto Trading Platform",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2025-12-22",
+      "source": "SEC Enforcement Action",
+      "notes": "Cirkor Inc. fake trading platform established May 2024. Part of $14M AIIEF/Zenith WhatsApp investment club scam. Administratively dissolved Oct 2025. Fake STO for HumanBlock crypto."
+    },
+    {
+      "domain": "claimjustice.com",
+      "category": "Recovery Scam \u2014 FBI Seized",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-06-15",
+      "source": "FBI Seizure",
+      "notes": "Third company in FBI 2024 seizure alongside MyChargeBack and Payback Ltd. Targeted crypto/forex victims through aggressive advertising and fake testimonials."
+    },
+    {
+      "domain": "coinbasepro-security.com",
+      "category": "Phishing \u2014 Coinbase Impersonation",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-09-03",
+      "source": "PhishTank",
+      "notes": "Spoofs Coinbase Pro security alerts to harvest login credentials."
+    },
+    {
+      "domain": "coinw6.com",
+      "category": "Pig Butchering / Fake Crypto Platform",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-09-17",
+      "source": "SEC Enforcement Action",
+      "notes": "First-ever SEC pig butchering case alongside NanoBit. Romance scam via LinkedIn/Instagram then WhatsApp. 11+ victims lost $2.2M+. Promised 3% daily returns from staking/mining. Blackmailed victims with romantic messages."
+    },
+    {
+      "domain": "compound-finance-distribution.com",
+      "category": "DeFi / Distribution Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-08-15",
+      "source": "Compound Official Warning",
+      "notes": "Fake COMP token distribution event. Claims retroactive rewards available. Drains entire wallet balance upon interaction. Not affiliated with Compound."
+    },
+    {
+      "domain": "crypto-recoveryfund.com",
+      "category": "Recovery Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-12-01",
+      "source": "Action Fraud UK",
+      "notes": "Targets previous crypto fraud victims. Charges upfront recovery fees then disappears."
+    },
+    {
+      "domain": "cryptominer-pro.com",
+      "category": "Fake Crypto Mining",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-06-01",
+      "source": "NaijaSmartHub",
+      "notes": "Sells non-existent cloud mining contracts. No physical mining infrastructure."
+    },
+    {
+      "domain": "curve-finance-rewards.com",
+      "category": "DeFi / Rewards Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-10-20",
+      "source": "Curve Finance Warning",
+      "notes": "Fake Curve Finance rewards claim. Targets Curve LP token holders. Drains entire wallet including staked positions. Not affiliated with Curve."
+    },
+    {
+      "domain": "dailyforexearnings.com",
+      "category": "Forex Signal Scam",
+      "severity": "high",
+      "confidence": "high",
+      "reported": "2024-08-17",
+      "source": "EFCC Nigeria",
+      "notes": "Unlicensed forex signal service. Sells VIP memberships with no verifiable track record."
+    },
+    {
+      "domain": "dhl-tracking-reshipment.com",
+      "category": "Shipping/Package Phishing",
+      "severity": "high",
+      "confidence": "high",
+      "reported": "2024-12-05",
+      "source": "PhishTank",
+      "notes": "Shipping reshipment scam targeting e-commerce users. Claims package delivery failed. Requests payment for reshipping and harvests payment details."
+    },
+    {
+      "domain": "digitalassetprofits.io",
+      "category": "Fake Investment Platform",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-11-11",
+      "source": "ScamWarners",
+      "notes": "Shows manipulated dashboard profits. Withdrawals declined above $200."
+    },
+    {
+      "domain": "doublemycrypto.net",
+      "category": "Crypto Doubler",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-07-25",
+      "source": "NaijaSmartHub",
+      "notes": "Classic send-1-get-2 Ponzi. Pays a few early senders to manufacture trust."
+    },
+    {
+      "domain": "earnwithcryptobot.com",
+      "category": "Fake Crypto Trading Bot",
+      "severity": "high",
+      "confidence": "high",
+      "reported": "2024-10-29",
+      "source": "EFCC Nigeria",
+      "notes": "Automated bot subscription that claims 5% daily. No verifiable bot exists."
+    },
+    {
+      "domain": "efcc-grants.com",
+      "category": "Government Impersonation",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-12-05",
+      "source": "EFCC Nigeria",
+      "notes": "EFCC officially warned: this domain is not affiliated with the EFCC. Collects data for identity theft."
+    },
+    {
+      "domain": "elonmusk-cryptogiveaway.com",
+      "category": "Celebrity Endorsement Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-08-10",
+      "source": "FTC",
+      "notes": "Impersonates Elon Musk. Promises to double any Bitcoin sent to listed wallet addresses."
+    },
+    {
+      "domain": "emiratesjobsoffer.com",
+      "category": "Job Offer Scam",
+      "severity": "high",
+      "confidence": "high",
+      "reported": "2024-09-28",
+      "source": "NaijaSmartHub",
+      "notes": "Fake Gulf-region job offers. Charges visa processing fees. No jobs exist."
+    },
+    {
+      "domain": "ethena-labs-claim.com",
+      "category": "DeFi / Airdrop Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-09-18",
+      "source": "Ethena Labs Official",
+      "notes": "Fake Ethena Labs airdrop claim. Promises ENA tokens. Drains wallet including sUSDe positions. Part of wave of Ethena-themed phishing."
+    },
+    {
+      "domain": "ethereum-2.org",
+      "category": "Crypto Phishing / Upgrade Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-08-01",
+      "source": "Ethereum Foundation Warning",
+      "notes": "Phishing site targeting Ethereum holders during protocol upgrades. Claims users must 'migrate' ETH. Connect wallet to drain funds. Not affiliated with Ethereum Foundation."
+    },
+    {
+      "domain": "expertforexmentor.com",
+      "category": "Pig Butchering / Forex Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-11-19",
+      "source": "Action Fraud UK",
+      "notes": "Pig-butchering hybrid. Victim lured via social media romance then directed to this platform."
+    },
+    {
+      "domain": "facebook-business-verify.net",
+      "category": "Meta / Business Phishing",
+      "severity": "high",
+      "confidence": "high",
+      "reported": "2024-09-05",
+      "source": "Meta Security",
+      "notes": "Phishing site targeting Facebook business accounts. Claims account verification required. Hijacks business pages and ad accounts. Part of Meta's most-attacked brand."
+    },
+    {
+      "domain": "fastcashnaija.com",
+      "category": "Money Flip Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-07-04",
+      "source": "NaijaSmartHub",
+      "notes": "Targets Nigerian users. Claims to flip \u20a610,000 to \u20a650,000 in 30 minutes."
+    },
+    {
+      "domain": "fidelitybank-ng.com",
+      "category": "Bank Phishing",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-10-22",
+      "source": "Fidelity Bank Official Warning",
+      "notes": "Phishing site impersonating Fidelity Bank Nigeria. Harvests internet banking credentials."
+    },
+    {
+      "domain": "forex-profits.net",
+      "category": "Forex Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-05-11",
+      "source": "FTC",
+      "notes": "Unlicensed forex investment scheme. Multiple FTC complaints on file."
+    },
+    {
+      "domain": "fortsolution.tech",
+      "category": "Recovery Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2025-11-10",
+      "source": "Scam Tracking Database",
+      "notes": "Recovery scam targeting victims of previous frauds. Promises fund recovery through crypto tracing and legal escalation. No verifiable regulatory registration."
+    },
+    {
+      "domain": "freelancejobsng.com",
+      "category": "Job Scam",
+      "severity": "high",
+      "confidence": "medium",
+      "reported": "2024-09-01",
+      "source": "NaijaSmartHub",
+      "notes": "Charges \u20a65,000 registration fee for non-existent freelance contracts."
+    },
+    {
+      "domain": "funds-recovery.org",
+      "category": "Recovery Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2025-11-10",
+      "source": "Scam Tracking Database",
+      "notes": "Generic recovery scam. No verifiable licensing or track record. Charges upfront fees with no results. Part of broader recovery fraud ecosystem."
+    },
+    {
+      "domain": "globalprofittrade.com",
+      "category": "Fake Trading Platform",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-11-07",
+      "source": "FSCA South Africa",
+      "notes": "FSCA-listed unlicensed entity targeting Southern and West African investors."
+    },
+    {
+      "domain": "gtbank-secure-login.com",
+      "category": "Bank Phishing",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-12-10",
+      "source": "GTBank Official Warning",
+      "notes": "Phishing page mimicking GTBank internet banking portal. Not affiliated with Guaranty Trust Bank."
+    },
+    {
+      "domain": "guaranteedfxprofit.com",
+      "category": "Forex Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-08-30",
+      "source": "EFCC Nigeria",
+      "notes": "Domain name itself is a red flag \u2014 no forex profit is ever guaranteed under any circumstances."
+    },
+    {
+      "domain": "guaranteetrades247.com",
+      "category": "Fake Trading Platform",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2025-10-13",
+      "source": "FCA Warning List",
+      "notes": "FCA-listed unauthorised entity. Claims Edinburgh, UK address at 61 Dublin Street. Name itself is a red flag \u2014 guarantees in trading are impossible. Email linked to genesismininginc.com."
+    },
+    {
+      "domain": "h5.morocoin.top",
+      "category": "Fake Crypto Trading Platform",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2025-12-22",
+      "source": "SEC Enforcement Action",
+      "notes": "Purported crypto trading platform in $14M investment confidence scam. Operated Jan 2024-Jan 2025 via WhatsApp investment clubs. Promoted fake Security Token Offerings. Delinquent status."
+    },
+    {
+      "domain": "hackingtools-pro.net",
+      "category": "Tech Support / Hacking Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-10-01",
+      "source": "NaijaSmartHub",
+      "notes": "Sells fake 'hacking tools' or charges to hack social media accounts on behalf of victims."
+    },
+    {
+      "domain": "hedgesenterprises.com",
+      "category": "Fake Investment Platform",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2025-11-10",
+      "source": "Scam Tracking Database",
+      "notes": "Claims to be NZ-based trade/investment company. Uses stock photos as team members. Same template as Quantum TradexPro and Nova Fx Plus. Guaranteed ROI claims. Active fraudulent operation."
+    },
+    {
+      "domain": "highyieldcryptofund.com",
+      "category": "HYIP / Ponzi",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-06-15",
+      "source": "SEC Investor Alert",
+      "notes": "High Yield Investment Program. Pays early investors from later deposits in classic Ponzi structure."
+    },
+    {
+      "domain": "humanblock.io",
+      "category": "Fake Security Token Offering",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2025-12-22",
+      "source": "SEC Enforcement Action",
+      "notes": "Fictitious company promoted by AIIEF/Zenith groups. Fake HMB crypto token. Part of $14M fraud. No real company or product behind the offering."
+    },
+    {
+      "domain": "inheritance-fund-release.net",
+      "category": "Advance Fee Fraud (419)",
+      "severity": "high",
+      "confidence": "medium",
+      "reported": "2024-05-15",
+      "source": "NaijaSmartHub",
+      "notes": "Next-generation 419 scam. Claims large inheritance from distant relative. Requires 'legal fees' and 'processing charges' for fund release. Professional-looking documentation."
+    },
+    {
+      "domain": "instantbitcoin.io",
+      "category": "Crypto Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-04-20",
+      "source": "NaijaSmartHub",
+      "notes": "Promises instant Bitcoin credit on deposit. Withdrawals are blocked after initial small test payout."
+    },
+    {
+      "domain": "investfxauto.com",
+      "category": "Forex / Auto-Trade Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-09-17",
+      "source": "FCA Warning List",
+      "notes": "FCA-listed unauthorized investment firm operating from an unverifiable offshore address."
+    },
+    {
+      "domain": "irs-tax-refund-direct.com",
+      "category": "Government Impersonation / Tax Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2025-02-10",
+      "source": "IRS Warning",
+      "notes": "Impersonates IRS during tax season. Claims direct tax refund available. Harvests SSN, banking details, and personal information. Not affiliated with the IRS."
+    },
+    {
+      "domain": "lane-wealth.com",
+      "category": "Fake Investment Club",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2025-12-22",
+      "source": "SEC Enforcement Action",
+      "notes": "Lane Wealth Inc. WhatsApp investment club. Ran Jan-June 2024. Promoted Morocoin and Berge fake platforms. AI-generated tips used to build trust."
+    },
+    {
+      "domain": "linkedin-premium-invoice.com",
+      "category": "Professional Network Phishing",
+      "severity": "high",
+      "confidence": "high",
+      "reported": "2024-12-12",
+      "source": "LinkedIn Security",
+      "notes": "Phishing site impersonating LinkedIn Premium billing. Harvests payment details and professional credentials. Targets business professionals."
+    },
+    {
+      "domain": "loanapproved247.com",
+      "category": "Loan Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-11-25",
+      "source": "EFCC Nigeria",
+      "notes": "Approves loans instantly then requests insurance fee payment upfront. No loan is ever disbursed."
+    },
+    {
+      "domain": "luno-secure-verify.net",
+      "category": "Crypto Exchange Impersonation",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-10-25",
+      "source": "Luno Official Warning",
+      "notes": "Phishing clone of Luno exchange (different from lunoexchange.net in original list). Additional domain operated by same scam network. Captures login credentials and 2FA."
+    },
+    {
+      "domain": "lunoexchange.net",
+      "category": "Crypto Exchange Impersonation",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-08-04",
+      "source": "Luno Official Warning",
+      "notes": "Phishing clone of Luno exchange. Not affiliated with Luno (luno.com). Captures login and 2FA tokens."
+    },
+    {
+      "domain": "metamask-walletrestore.com",
+      "category": "Crypto Phishing \u2014 MetaMask",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-10-18",
+      "source": "PhishTank",
+      "notes": "Fake MetaMask recovery portal. Sole purpose is to harvest wallet seed phrases."
+    },
+    {
+      "domain": "mglobalfxtrade.com",
+      "category": "Fake Forex Broker",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-12-03",
+      "source": "EFCC Nigeria",
+      "notes": "Fake forex broker operating without any license. Office address is fabricated."
+    },
+    {
+      "domain": "microsoft-365-security-alert.com",
+      "category": "Tech Company Phishing",
+      "severity": "high",
+      "confidence": "high",
+      "reported": "2024-10-15",
+      "source": "Microsoft Security",
+      "notes": "Impersonates Microsoft 365 security alerts. Harvests corporate login credentials. Targets business users with fake security notifications."
+    },
+    {
+      "domain": "moonbitcoinpro.com",
+      "category": "Crypto Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-07-17",
+      "source": "ScamWarners",
+      "notes": "Bitcoin Ponzi with fake live withdrawal feeds displayed on homepage."
+    },
+    {
+      "domain": "mychargeback.com",
+      "category": "Recovery Scam \u2014 FBI Seized",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-06-15",
+      "source": "FBI Seizure",
+      "notes": "FBI seized domains in 2024. Parent company Cactil LLC. Charged significant upfront fees with no verifiable recovery outcomes. Targeted crypto/fx fraud victims."
+    },
+    {
+      "domain": "naijamoneymultiplier.com",
+      "category": "Money Multiplier Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-09-09",
+      "source": "NaijaSmartHub",
+      "notes": "Targets Nigerians. Claims to multiply naira sent via multiple social media recruitment channels."
+    },
+    {
+      "domain": "nanobit.com",
+      "category": "Pig Butchering / Fake Crypto Platform",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-09-17",
+      "source": "SEC Enforcement Action",
+      "notes": "First-ever SEC pig butchering case. Fake crypto platform that stole ~$968K from 18+ victims. Scammers impersonated financial professionals in WhatsApp groups. Funds wired to Hong Kong."
+    },
+    {
+      "domain": "netflix-billing-update.net",
+      "category": "Subscription Phishing",
+      "severity": "high",
+      "confidence": "high",
+      "reported": "2024-09-20",
+      "source": "PhishTank",
+      "notes": "Phishing site impersonating Netflix. Claims billing information needs update. Harvests credit card details and account credentials. Mass-distributed via email."
+    },
+    {
+      "domain": "newyorkfinancialgroupllc.com",
+      "category": "Unauthorized Investment Firm",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2025-10-13",
+      "source": "FCA Warning List",
+      "notes": "FCA-listed unauthorised firm with fake New York address. Contact numbers +13322860609 and +13479835187. Not registered with any securities regulator."
+    },
+    {
+      "domain": "ngnscholarship.com",
+      "category": "Scholarship Scam",
+      "severity": "high",
+      "confidence": "medium",
+      "reported": "2024-10-07",
+      "source": "NaijaSmartHub",
+      "notes": "Fake international scholarship portal. Charges application and document processing fees."
+    },
+    {
+      "domain": "nigerian-customs-auction.com",
+      "category": "Government Impersonation / Auction Scam",
+      "severity": "high",
+      "confidence": "medium",
+      "reported": "2024-07-20",
+      "source": "NaijaSmartHub",
+      "notes": "Impersonates Nigeria Customs Service. Claims to auction seized vehicles/goods at low prices. Advance fee fraud \u2014 victims pay 'processing fees' for non-existent items."
+    },
+    {
+      "domain": "nigerianprinceheritage.com",
+      "category": "Advance Fee Fraud (419)",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-03-01",
+      "source": "EFCC Nigeria",
+      "notes": "Classic 419 advance fee fraud. Victim promised large inheritance disbursement in exchange for small fee."
+    },
+    {
+      "domain": "nnpc-oil-contracts.com",
+      "category": "Business Email Compromise / Contract Scam",
+      "severity": "high",
+      "confidence": "medium",
+      "reported": "2024-06-10",
+      "source": "NaijaSmartHub",
+      "notes": "Impersonates NNPC (Nigerian National Petroleum Corporation). Offers fake oil supply contracts. Advance fee fraud targeting local and international businesses."
+    },
+    {
+      "domain": "noowex.com",
+      "category": "Crypto Wallet Phishing",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2025-05-09",
+      "source": "PhishDestroy",
+      "notes": "Active crypto wallet phishing operation. Uses pixel-perfect clones of legitimate sites. Malicious approval phishing to drain wallets. Pig butchering component."
+    },
+    {
+      "domain": "nova-fx-plus.xyz",
+      "category": "Fake Forex/Crypto Broker",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2025-07-15",
+      "source": "FCA/Scam Database",
+      "notes": "Multi-asset fake platform. Domain registered July 2025. Claims regulation in SVG, Seychelles, South Africa \u2014 none verified. Same layout as Quantum TradexPro. Fake executive identities."
+    },
+    {
+      "domain": "okxpro-trading.com",
+      "category": "Crypto Exchange Impersonation",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-11-28",
+      "source": "OKX Official Warning",
+      "notes": "Not affiliated with OKX (okx.com). Pig butchering platform targeting OKX brand reputation."
+    },
+    {
+      "domain": "opensea-mint-free.net",
+      "category": "NFT Phishing",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-09-30",
+      "source": "OpenSea Official Warning",
+      "notes": "Fake OpenSea free minting site. Claims exclusive NFT drop. Wallet drain via malicious contract approval. Targets NFT collectors and traders."
+    },
+    {
+      "domain": "optimism-airdrop-claim.net",
+      "category": "Layer 2 / Airdrop Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-10-01",
+      "source": "Optimism Foundation",
+      "notes": "Fake Optimism OP airdrop claim page. Targets Ethereum L2 users. Drains tokens across connected chains upon wallet approval."
+    },
+    {
+      "domain": "optionstraderzone.com",
+      "category": "Binary Options Fraud",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-09-22",
+      "source": "CFTC",
+      "notes": "CFTC-registered complaint. Manipulates trade outcomes to ensure customer losses."
+    },
+    {
+      "domain": "payback-ltd.com",
+      "category": "Recovery Scam \u2014 FBI Seized",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-06-15",
+      "source": "FBI Seizure",
+      "notes": "Israel-based recovery company. FBI seized 2024. Heavily marketed to US victims. Claimed $5M+ recovered in 2023. Upfront fees, unverifiable success claims."
+    },
+    {
+      "domain": "paymeback.net",
+      "category": "Recovery Scam",
+      "severity": "high",
+      "confidence": "medium",
+      "reported": "2025-11-10",
+      "source": "Scam Recovery Review",
+      "notes": "Markets itself as recovery service. Claims no upfront fees but verification difficult. Part of an industry where 90%+ of operations are fraudulent."
+    },
+    {
+      "domain": "paypal-security-alert.net",
+      "category": "Phishing \u2014 PayPal Impersonation",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-08-28",
+      "source": "PhishTank",
+      "notes": "Mass-distributed phishing email links. Not affiliated with PayPal Inc."
+    },
+    {
+      "domain": "pendle-finance-yt.com",
+      "category": "DeFi / Yield Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-12-01",
+      "source": "Pendle Finance Warning",
+      "notes": "Fake Pendle Finance yield token claim. Targets Pendle YT token holders. Malicious contract drains wallet upon approval."
+    },
+    {
+      "domain": "profitstrade247.com",
+      "category": "Fake Trading Platform",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-12-15",
+      "source": "NaijaSmartHub",
+      "notes": "Fake trading platform. Allows small withdrawals initially, then blocks all withdrawals above threshold."
+    },
+    {
+      "domain": "prosperity-partners.com",
+      "category": "Ponzi Scheme / Affinity Fraud",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-11-15",
+      "source": "NASAA/State Regulators",
+      "notes": "$25M Ponzi targeting Nigerian and Cameroonian immigrant communities in Maryland. 585+ investors. Promised 6% monthly. No actual investments made. WhatsApp-based recruitment."
+    },
+    {
+      "domain": "quantumtradexpro.com",
+      "category": "Fake Trading Platform",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2025-11-10",
+      "source": "Scam Tracking Database",
+      "notes": "Fake financial platform offering crypto, forex, stocks, commodities. False regulatory claims. Copied registration details. Virtual office addresses. Same template reused across multiple scams."
+    },
+    {
+      "domain": "quickprofits247.com",
+      "category": "Investment Fraud",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-07-31",
+      "source": "NaijaSmartHub",
+      "notes": "Promises daily profits with no trading mechanism. Pure Ponzi operation."
+    },
+    {
+      "domain": "raydium-airdrop-solana.net",
+      "category": "DeFi / Airdrop Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-10-10",
+      "source": "Solana Community Alert",
+      "notes": "Fake Raydium airdrop on Solana. Claims free token distribution. Drains SOL and SPL tokens upon wallet connection. Targets Solana ecosystem users."
+    },
+    {
+      "domain": "realestatenig-plots.com",
+      "category": "Property Scam",
+      "severity": "high",
+      "confidence": "medium",
+      "reported": "2024-11-14",
+      "source": "NaijaSmartHub",
+      "notes": "Selling land plots that either do not exist or have been multiply sold to different victims."
+    },
+    {
+      "domain": "recoveryscamhelp.com",
+      "category": "Recovery Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-10-26",
+      "source": "Action Fraud UK",
+      "notes": "Secondary scam targeting previous fraud victims. Promises fund recovery for upfront fee."
+    },
+    {
+      "domain": "royalbinaryoption.com",
+      "category": "Binary Options Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-05-20",
+      "source": "EFCC Nigeria",
+      "notes": "Unlicensed binary options broker. Customer funds unrecoverable on closure."
+    },
+    {
+      "domain": "satcommtech-sto.com",
+      "category": "Fake Security Token Offering",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2025-12-22",
+      "source": "SEC Enforcement Action",
+      "notes": "Fictitious company SatCommTech promoted by AI Wealth/Lane Wealth. Fake SCT crypto security token offering. Company did not exist. Counterfeit whitepapers distributed."
+    },
+    {
+      "domain": "securepaybank.ltd",
+      "category": "Fake Bank / Unauthorized Financial Service",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2025-10-13",
+      "source": "FCA Warning List",
+      "notes": "FCA-listed fake bank. Email info@securepaybank.ltd. FCA specifically noted this is NOT connected to legitimate Securepaybank.com. Unlicensed deposit-taking operation."
+    },
+    {
+      "domain": "signalforexgroup.com",
+      "category": "Forex Signal Scam",
+      "severity": "high",
+      "confidence": "high",
+      "reported": "2024-09-05",
+      "source": "NaijaSmartHub",
+      "notes": "VIP signal service claiming 95% accuracy. No auditable trade history provided."
+    },
+    {
+      "domain": "smartinvestnaija.com",
+      "category": "Investment Fraud",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-12-08",
+      "source": "EFCC Nigeria",
+      "notes": "Collapsed Ponzi that defrauded over 2,000 Nigerians. EFCC investigation ongoing."
+    },
+    {
+      "domain": "solana-airdrop.net",
+      "category": "Crypto Phishing",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-08-14",
+      "source": "ScamWarners",
+      "notes": "Fake Solana airdrop claims wallet connection to drain funds. Classic approve-and-drain attack."
+    },
+    {
+      "domain": "stymrepo.com",
+      "category": "E-commerce / Vehicle Scam",
+      "severity": "high",
+      "confidence": "high",
+      "reported": "2022-08-01",
+      "source": "BBB Scam Tracker",
+      "notes": "Vehicle auction scam advertising motorhomes/RVs. Victims wired payments for vehicles never delivered. Same infrastructure reused for crypto scams in 2024-2025."
+    },
+    {
+      "domain": "sushiswap-claim.org",
+      "category": "DeFi / Airdrop Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-07-30",
+      "source": "SushiSwap Community Alert",
+      "notes": "Fake SushiSwap airdrop claim page. Claims SUSHI token redistribution. Drains tokens upon wallet connection. Uses .org for false legitimacy."
+    },
+    {
+      "domain": "telegram-premium-free.org",
+      "category": "Messaging App Phishing",
+      "severity": "high",
+      "confidence": "high",
+      "reported": "2024-10-22",
+      "source": "Telegram Security",
+      "notes": "Fake Telegram Premium offer. Claims free premium subscription. Harvests phone numbers and payment details. 5th most-phished brand globally."
+    },
+    {
+      "domain": "tesla-investor-club.com",
+      "category": "Celebrity Endorsement Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-10-05",
+      "source": "FTC",
+      "notes": "Impersonates Tesla/Elon Musk investment program. Promises guaranteed returns from 'Tesla automated trading system.' Classic celebrity impersonation investment fraud."
+    },
+    {
+      "domain": "tiktok-invest-pro.com",
+      "category": "Social Media Investment Scam",
+      "severity": "high",
+      "confidence": "high",
+      "reported": "2024-10-31",
+      "source": "NaijaSmartHub",
+      "notes": "TikTok-branded fake investment scheme. Designed to target younger demographics."
+    },
+    {
+      "domain": "topforexsignalsng.com",
+      "category": "Forex Signal Scam",
+      "severity": "high",
+      "confidence": "medium",
+      "reported": "2024-09-13",
+      "source": "NaijaSmartHub",
+      "notes": "Charges NGN 50,000 for VIP signals. Claims 98% accuracy with no verifiable record."
+    },
+    {
+      "domain": "trustbitcoinmarket.com",
+      "category": "Fake Crypto Exchange",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-07-20",
+      "source": "ScamWarners",
+      "notes": "Fake P2P crypto exchange. Holds deposited funds then disappears with no support response."
+    },
+    {
+      "domain": "trustwallet-sync.org",
+      "category": "Crypto Wallet Phishing",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-11-15",
+      "source": "Trust Wallet Official Warning",
+      "notes": "Fake Trust Wallet synchronization portal. Claims wallet needs to be synced. Sole purpose is harvesting recovery phrases and private keys."
+    },
+    {
+      "domain": "ukscholarship-fund.com",
+      "category": "Scholarship Scam",
+      "severity": "high",
+      "confidence": "medium",
+      "reported": "2024-11-02",
+      "source": "Action Fraud UK",
+      "notes": "Fake UK scholarship fund. Charges GBP 200 application and IELTS exemption processing fee."
+    },
+    {
+      "domain": "uniswap-claim.net",
+      "category": "DeFi / Airdrop Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-09-19",
+      "source": "PhishTank",
+      "notes": "Fake Uniswap UNI token claim. Connects wallet and drains all tokens via malicious approval."
+    },
+    {
+      "domain": "usdtflip.io",
+      "category": "Crypto Flip Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-10-12",
+      "source": "NaijaSmartHub",
+      "notes": "Promises to double USDT sent within hours. Classic flip Ponzi using Tether as vehicle."
+    },
+    {
+      "domain": "usps-tracking-refund.com",
+      "category": "Shipping / Refund Phishing",
+      "severity": "high",
+      "confidence": "high",
+      "reported": "2025-01-15",
+      "source": "USPS Warning",
+      "notes": "Impersonates USPS. Most-phished brand 2024-2025 with 67,707+ phishing sites. Claims delivery failed refund. Harvests payment and personal information."
+    },
+    {
+      "domain": "verifiedinvestmentplan.com",
+      "category": "Investment Fraud",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-08-06",
+      "source": "SEC Investor Alert",
+      "notes": "No verifiable registration with any securities regulator. 'Verified' claim is entirely self-declared."
+    },
+    {
+      "domain": "viralmoneyng.com",
+      "category": "Money Flip Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-07-02",
+      "source": "NaijaSmartHub",
+      "notes": "Viral social media money-flip operation. Pays early senders to generate testimonials."
+    },
+    {
+      "domain": "vortexcoin.one",
+      "category": "Crypto Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2025-05-16",
+      "source": "Sygnia Investigation",
+      "notes": "Linked to 8-year fraud network using same Iceland phone (+354-42-12434) and Reykjavik address. Previously ran vehicle auction scams. Faceless operation."
+    },
+    {
+      "domain": "walletrecovery247.com",
+      "category": "Crypto Recovery Scam",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-12-12",
+      "source": "NaijaSmartHub",
+      "notes": "Charges upfront fees to recover lost crypto. Harvests any wallet credentials shared during 'recovery'."
+    },
+    {
+      "domain": "wellsfargo-account-alert.com",
+      "category": "Bank Phishing",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-10-08",
+      "source": "Wells Fargo Security",
+      "notes": "Phishing site impersonating Wells Fargo. Fake account alerts to harvest login credentials and SSN. High-confidence confirmed phishing."
+    },
+    {
+      "domain": "whatsminerpro.com",
+      "category": "Fake Crypto Mining Hardware",
+      "severity": "high",
+      "confidence": "medium",
+      "reported": "2024-11-01",
+      "source": "NaijaSmartHub",
+      "notes": "Sells fake Bitcoin mining hardware. Products never delivered after payment. Common scam targeting aspiring crypto miners in Nigeria and Africa."
+    },
+    {
+      "domain": "zenithbank-upgrade.com",
+      "category": "Bank Phishing",
+      "severity": "critical",
+      "confidence": "high",
+      "reported": "2024-11-06",
+      "source": "Zenith Bank Official Warning",
+      "notes": "Phishing site. Zenith Bank officially warned customers this domain is not affiliated with them."
+    },
+    {
+      "domain": "zoom-security-billing.com",
+      "category": "SaaS Phishing",
+      "severity": "high",
+      "confidence": "high",
+      "reported": "2024-11-08",
+      "source": "Zoom Security",
+      "notes": "Phishing clone targeting Zoom users. Fake security billing alert. Harvests corporate credentials and payment information."
+    }
+  ]
+}
