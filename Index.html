@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<HTML>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Language" content="en-NG">
+    <meta name="language" content="en-NG">
+    <meta name="theme-color" content="#008c5f">
+    
+    <!-- Core SEO -->
+    <title>Scam Red Flag Checker | Free Online Fraud Detector — NaijaSmartHub</title>
+    <meta name="description" content="Free scam detector analyzing websites against 27 fraud patterns, typosquatting & threat intelligence. 100% private client-side scan. Built for Nigeria & global users.">
+    <meta name="keywords" content="scam checker, scam detector, fraud checker, website scam checker, online scam detector, phishing checker, crypto scam checker, investment fraud detector, check if website is legit, typosquat checker, NaijaSmartHub">
+    <meta name="author" content="NaijaSmartHub">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <link rel="canonical" href="https://scamchecker.naijasmarthub.com.ng">
+    <link rel="alternate" hreflang="en-ng" href="https://scamchecker.naijasmarthub.com.ng">
+    <link rel="alternate" hreflang="x-default" href="https://scamchecker.naijasmarthub.com.ng">
+    
+    <!-- Performance Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://raw.githubusercontent.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://www.naijasmarthub.com.ng/favicon.ico">
+    
+    <!-- Open Graph -->
+    <meta property="og:locale" content="en_NG">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Scam Red Flag Checker | Free Fraud Detector — NaijaSmartHub">
+    <meta property="og:description" content="Analyze any website for scam signals. 27 fraud patterns, typosquat detection & private client-side scanning.">
+    <meta property="og:url" content="https://scamchecker.naijasmarthub.com.ng">
+    <meta property="og:site_name" content="NaijaSmartHub">
+    <meta property="og:image" content="https://naijasmarthub.com.ng/assets/scam-checker-og.jpg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Scam Red Flag Checker | NaijaSmartHub">
+    <meta name="twitter:description" content="Free scam detector. 27 fraud patterns, typosquat detection & private client-side scanning.">
+    <meta name="twitter:image" content="https://naijasmarthub.com.ng/assets/scam-checker-og.jpg">
+    
+    <!-- Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Scam Red Flag Checker",
+      "applicationCategory": "SecurityApplication",
+      "operatingSystem": "Any",
+      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "NGN"},
+      "url": "https://scamchecker.naijasmarthub.com.ng",
+      "description": "Analyze websites against 27 fraud patterns, typosquat database and threat intelligence feeds. 100% client-side privacy.",
+      "author": {
+        "@type": "Organization",
+        "name": "NaijaSmartHub",
+        "url": "https://www.naijasmarthub.com.ng"
+      }
+    }
+    </script>
+        <!-- ① Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "NaijaSmartHub",
+      "url": "https://naijasmarthub.com.ng",
+      "logo": "https://naijasmarthub.com.ng/assets/logo.png",
+      "sameAs": [
+        "https://twitter.com/NaijaSmartHub",
+        "https://facebook.com/NaijaSmartHubfb",
+        "https://github.com/sdavidprince"
+      ],
+      "description": "NaijaSmartHub provides cybersecurity tools, threat intelligence, and digital safety resources for Nigeria and global audiences."
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How does the Scam Red Flag Checker work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Scam Red Flag Checker queries our GitHub-hosted scam database, NaijaSmartHub blog posts, external RSS intelligence feeds, and runs 27 built-in pattern checks on any text you paste. It does not visit the target URL directly due to browser CORS policy. All pattern scans run 100% client-side in your browser with zero data transmission."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the Scam Red Flag Checker free to use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, the Scam Red Flag Checker is completely free to use. There are no hidden fees, subscriptions, or registration requirements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my data private when using this scam checker?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. The pattern scan runs entirely in your browser. Nothing you paste or analyze is sent to any server. We do not collect, store, or transmit your search queries or pasted content."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What types of scams can this tool detect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The tool detects investment fraud, Ponzi schemes, advance-fee fraud, phishing attempts, crypto pump-and-dump schemes, romance scams, fake celebrity endorsements, fund recovery scams, pyramid schemes, and typosquatting domains targeting popular platforms like Coinbase, Binance, PayPal, and MetaMask."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is typosquatting detection?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Typosquatting detection uses a Levenshtein distance engine to identify fake websites that use slightly misspelled versions of legitimate domains (e.g., 'co1nbase.com' instead of 'coinbase.com'). These are common vectors for phishing and credential theft."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How accurate is the scam analysis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Scores and flags are indicative and based on known fraud patterns, domain databases, and threat intelligence feeds. While the tool is highly effective at identifying common scam signatures, we always recommend cross-verifying independently and reporting suspected fraud to relevant authorities like the EFCC or SEC."
+          }
+        }
+      ]
+    }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link href="/style.css" rel="stylesheet" />
+
+    <style>#header.show{top:-60px}#header{align-items:center;background-color:#008c5f;color:#fff;display:flex;flex-wrap:nowrap;height:3.25rem;line-height:0;overflow:hidden;position:sticky;position:-webkit-sticky;top:0;transition:top .3s ease}#header .title{padding:0 1.5rem;margin-right:1.5rem;font-size:1.5rem;font-weight:600}#header ul{overflow-x:auto;font-weight:300}#header a{color:#fff;text-decoration:none;padding:0 1rem;line-height:3.25rem;display:block}#header a:hover{background-color:rgb(0 0 0 / .25);color:#fff;text-decoration:none}#header ul,#header li{list-style:none;display:inline-block;white-space:nowrap;margin:0;padding:0}@media screen and (max-width:480px){#header a{font-size:13px;padding:8px 11px}}@media screen and (max-width:360px){#header a{font-size:12px;padding:7px 10px}}</style>
+</head>
+
+<body>
+   <main> 
+     <header id="header">
+  <span class="title">
+    NSH
+  </span>
+  <ul>
+    <li><a href="#" title="Download">Home Site</a></a></li>
+    <li><a href="#" title="Tutorial">About</a></li>
+    <li><a href="#" title="Video">More Tools</a></li>
+  </ul>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SCAM RED FLAG CHECKER 
+═══════════════════════════════════════════════════════════════ -->
+
+<!-- ═══ HTML STRUCTURE ═══ -->
+<div id="src-tool">
+
+  <!-- Top bar: brand + theme toggle -->
+  <div class="src-topbar">
+    <div class="src-brand">
+      <div class="src-brand-dot"></div>
+      NaijaSmartHub · Threat Intel
+    </div>
+    <button class="src-theme-toggle" id="src-theme-btn" onclick="srcToggleTheme()" aria-label="Toggle dark mode">
+      <span id="src-theme-icon">🌙</span>
+      <span id="src-theme-lbl">Dark Mode</span>
+    </button>
+  </div>
+
+  <!-- Header -->
+  <div class="src-header">
+    <div class="src-header-line"></div>
+    <div class="src-eyebrow">
+      <span class="src-eyebrow-bar"></span>Threat Intelligence<span class="src-eyebrow-bar"></span>
+    </div>
+    <h1 class="src-title">Scam <span class="src-title-accent">Red Flag</span> Checker</h1>
+    <p class="src-subtitle">Analyze any website or platform against known scam databases, 27 pattern signatures &amp; community reports.</p>
+    <div class="src-ticker">
+      <div class="src-ticker-item"><span class="t-val">27</span> Built-in patterns</div>
+      <div class="src-ticker-sep"></div>
+      <div class="src-ticker-item"><span class="t-val">GitHub</span> Threat DB</div>
+      <div class="src-ticker-sep"></div>
+      <div class="src-ticker-item"><span class="t-val">Levenshtein</span> Typosquat engine</div>
+      <div class="src-ticker-sep"></div>
+      <div class="src-ticker-item"><span class="t-val">1-hr</span> Cache</div>
+    </div>
+  </div>
+
+  <!-- Input panel -->
+  <div class="src-panel">
+    <div class="src-panel-label">Target Analysis</div>
+    <div class="src-row">
+      <div class="src-input-wrap">
+        <span class="src-input-icon">🔍</span>
+        <input type="text" id="src-url"
+          placeholder="https://suspicious-site.com  or  platform name"
+          autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false"/>
+      </div>
+      <button class="src-btn" id="src-btn" onclick="srcRunCheck()">
+        <span class="src-btn-scan"></span>
+        <span id="src-btn-txt">▶ Analyze</span>
+      </button>
+    </div>
+
+    <label class="src-paste-toggle" for="src-paste-chk">
+      <input type="checkbox" id="src-paste-chk" onchange="srcTogglePaste(this)">
+      Paste site content for pattern analysis (optional — 100% client-side)
+    </label>
+
+    <div class="src-paste-area" id="src-paste-area">
+      <span class="src-paste-hint-label">// Paste suspicious site content below ▼</span>
+      <textarea id="src-paste"
+        placeholder="Paste any text from the suspicious website — emails, T&Cs, promo copy, chat messages. The 27-pattern engine scans it locally. Zero data transmission."></textarea>
+      <div class="src-paste-footer">🔒 Pattern scan runs entirely in your browser. Nothing is sent to any server.</div>
+    </div>
+  </div>
+
+  <!-- Source status pills -->
+  <div class="src-pills" id="src-pills">
+    <div class="src-pill" id="pill-patterns"><span class="src-pill-dot"></span>Pattern DB</div>
+    <div class="src-pill" id="pill-domains"><span class="src-pill-dot"></span>Domain DB</div>
+    <div class="src-pill" id="pill-typos"><span class="src-pill-dot"></span>Typosquat DB</div>
+    <div class="src-pill" id="pill-blogger"><span class="src-pill-dot"></span>Blog Feed</div>
+    <div class="src-pill" id="pill-rss"><span class="src-pill-dot"></span>RSS Intel</div>
+  </div>
+
+  <!-- Scanning status bar -->
+  <div id="src-status">
+    <div class="src-status-pulse"></div>
+    <span id="src-status-txt">Initializing…</span>
+  </div>
+
+  <!-- Results injected by JS -->
+  <div id="src-results"></div>
+
+  <!-- Footer -->
+  <div class="src-footer">
+    <strong>ℹ️ How this tool works:</strong> Queries our scam database,
+    <a href="https://naijasmarthub.com.ng" target="_blank" rel="noopener">NaijaSmartHub</a> blog posts,
+    external RSS intelligence feeds, and runs 27 built-in pattern checks on any text you paste.
+    Does <em>not</em> visit the target URL (browser CORS policy). Scores are indicative — always cross-verify independently.
+    Analysis cached locally for 1 hour; database cached for 6 hours.
+  </div>
+</div>
+
+<!-- Toast notification -->
+<div id="src-toast"></div>
+
+<!-- ═══ JAVASCRIPT ENGINE ═══ -->
+<script>
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ① CONFIGURATION  — 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+const SRC = {
+  blogUrl:     'https://naijasmarthub.com.ng',
+  ghRaw:       'https://raw.githubusercontent.com/sdavidprince/Sc-Ch/main',
+  rss2jsonKey: '',   /* optional: paste rss2json.com API key for higher rate limits */
+  rssFeeds: [
+    'https://www.scamwarners.com/forum/rss.php',
+    'https://www.complaintsboard.com/rss.xml',
+    'https://dfuse.org.uk/feed/',
+  ],
+  cacheTTL:   3600 * 1000,      /* 1 hour  — full analysis cache */
+  dbCacheTTL: 6 * 3600 * 1000, /* 6 hours — GitHub DB cache */
+};
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ② 27 BUILT-IN PATTERN SIGNATURES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+const PATTERNS = [
+  /* ── CRITICAL ── */
+  {id:'C01',sev:'critical',w:25,name:'Guaranteed Investment Returns',
+   pat:/guaranteed?\s+(return|profit|income|earning|yield|roi)/i,
+   desc:'Legitimate investments never guarantee returns. A foundational hallmark of investment fraud across all jurisdictions.'},
+  {id:'C02',sev:'critical',w:25,name:'Ponzi / Pyramid Scheme Language',
+   pat:/(refer\s+friend|referral\s+bonus|recruitment\s+bonus|earn\s+per\s+referral|multi[\s-]?level|downline|upline|matrix\s+plan)/i,
+   desc:'Recruitment-based earning structures are the defining characteristic of pyramid and multi-level marketing scams.'},
+  {id:'C03',sev:'critical',w:25,name:'Advance Fee Fraud',
+   pat:/(pay\s+(a\s+)?(small\s+)?(fee|tax|charge|deposit|insurance)|release\s+(fee|funds)|unlock\s+(your\s+)?(funds|money|prize|reward)|send\s+(money|payment)\s+to\s+(receive|claim|unlock))/i,
+   desc:'Requesting upfront payment to release non-existent funds or prizes is the core mechanic of 419/advance-fee fraud.'},
+  {id:'C04',sev:'critical',w:22,name:'False Regulatory Authorization',
+   pat:/(regulated\s+by|licensed\s+by|registered\s+with)\s+(fca|sec|cftc|asic|fsca|cbn|sec\s+nigeria|finra|mifid|cma|efcc)/i,
+   desc:'Scammers falsely claim regulatory authorization to appear legitimate. Always verify directly on the regulator\'s official site.'},
+  {id:'C05',sev:'critical',w:22,name:'Withdrawal Obstruction Tactic',
+   pat:/(cannot\s+withdraw|withdrawal\s+(fee|tax|blocked|suspended|pending)|pay\s+to\s+withdraw|account\s+(frozen|blocked|suspended))/i,
+   desc:'Fee-gating or blocking withdrawals is how fraudulent platforms trap victims after the initial deposit.'},
+  {id:'C06',sev:'critical',w:18,name:'Phishing / Account Verification',
+   pat:/(verify\s+your\s+(account|identity|details|email)|confirm\s+your\s+(password|identity|account|pin)|account\s+(suspended|frozen|limited|restricted|at\s+risk)|unusual\s+activity\s+(detected|noticed)|click\s+here\s+to\s+(verify|confirm|restore|reactivate))/i,
+   desc:'Classic phishing language patterns designed to steal credentials and personal data.'},
+  {id:'C07',sev:'critical',w:16,name:'Government / Authority Impersonation',
+   pat:/(irs|fbi|efcc|icpc|interpol|microsoft\s+security|paypal\s+security|amazon\s+security|bank\s+of\s+america).{0,50}(suspend|frozen|illegal|warrant|arrest|seized|hack)/i,
+   desc:'Impersonates official government or corporate authorities to coerce immediate victim action.'},
+  {id:'C08',sev:'critical',w:15,name:'Sensitive Data Harvesting',
+   pat:/(social\s+security\s+number|ssn|\bBVN\b|bank\s+(account\s+number|login|password)|full\s+credit\s+card|pin\s+number|mother'?s\s+maiden\s+name|national\s+id\s+number)/i,
+   desc:'Requests for sensitive financial or government identity data that should never be shared externally.'},
+  /* ── HIGH ── */
+  {id:'H01',sev:'high',w:16,name:'Unrealistic Percentage ROI',
+   pat:/(\d+)\s*%\s+(daily|weekly|guaranteed|per\s+(day|week))\s*(return|profit|interest|roi)?/i,
+   desc:'Any percentage return promised daily or weekly is almost certainly part of a fraudulent investment scheme.'},
+  {id:'H02',sev:'high',w:15,name:'Urgency / Scarcity Pressure Tactic',
+   pat:/(limited\s+(time|offer|slots?|spots?|seats?)|act\s+now|expires?\s+(soon|today|in\s+\d+)|don'?t\s+miss\s+(out|this)|last\s+chance|today\s+only|offer\s+ends)/i,
+   desc:'Artificial urgency is a deliberate manipulation tactic designed to prevent victims from conducting research.'},
+  {id:'H03',sev:'high',w:14,name:'Fund Recovery / Chargeback Scam',
+   pat:/(recover\s+(your\s+)?(lost\s+)?(crypto|bitcoin|funds|money|investment)|fund\s+recovery\s+service|chargeback\s+(specialist|service|expert)|help\s+get\s+your\s+money\s+back)/i,
+   desc:'Recovery scams target previous fraud victims, charging upfront fees to "recover" money that was already stolen.'},
+  {id:'H04',sev:'high',w:13,name:'Fabricated Celebrity Endorsement',
+   pat:/(endorsed?\s+by|backed?\s+by|recommended?\s+by|used\s+by)\s+(elon\s+musk|warren\s+buffett|jeff\s+bezos|bill\s+gates|oprah|ronaldo|dangote|davido|wizkid)/i,
+   desc:'Scammers routinely fabricate celebrity endorsements to manufacture false legitimacy and investor trust.'},
+  {id:'H05',sev:'high',w:12,name:'No-KYC / Anonymous Platform',
+   pat:/(no[\s-]?kyc|kyc[\s-]?free|no\s+verification\s+required|fully\s+anonymous\s+(trading|platform)|unregulated\s+(platform|exchange))/i,
+   desc:'Legitimate financial platforms require identity verification by law. No-KYC is a major regulatory red flag.'},
+  {id:'H06',sev:'high',w:12,name:'Crypto-Only Payment Demand',
+   pat:/(pay\s+(only\s+)?(in\s+)?(bitcoin|btc|usdt|eth|bnb)|accept\s+(only\s+)?crypto(currency)?|no\s+(bank|fiat|card)\s+(transfer|payment|accepted))/i,
+   desc:'Crypto-only payments prevent chargebacks and make stolen funds practically impossible to recover.'},
+  {id:'H07',sev:'high',w:12,name:'Too-Good-To-Be-True Income Claims',
+   pat:/(make\s+\$?\d{3,}\s+(a|per)\s+day|earn\s+\$?\d{3,}\s+daily|work\s+from\s+home\s+(and\s+)?earn|instant\s+(cash|money|profit|payout)|get\s+paid\s+instantly|make\s+money\s+fast)/i,
+   desc:'Wildly unrealistic income claims are designed to bypass rational scepticism and trigger emotional decision-making.'},
+  {id:'H08',sev:'high',w:12,name:'Unsolicited Lottery / Prize',
+   pat:/(you\s+(have\s+)?(won|been\s+selected|been\s+chosen)|congratulations.{0,30}(prize|award|reward)|lottery.{0,20}winner|unclaimed\s+(prize|funds|money|reward)|claim\s+your\s+(prize|winnings|reward))/i,
+   desc:'Unsolicited prize or lottery notifications are classic advance-fee and data-theft vectors.'},
+  {id:'H09',sev:'high',w:10,name:'Crypto Pump-and-Dump Language',
+   pat:/(to\s+the\s+moon|moonshot|\b10x\b|\b100x\b|\b1000x\b|get\s+rich\s+quick|presale\s+token|early\s+investor\s+(bonus|access)|\blambo\b|guaranteed\s+crypto\s+signal)/i,
+   desc:'Language patterns characteristic of cryptocurrency pump-and-dump schemes and fake token presale scams.'},
+  {id:'H10',sev:'high',w:10,name:'Romance Scam Indicators',
+   pat:/(fell\s+in\s+love\s+with\s+you|my\s+soul[\s-]?mate|military\s+(officer|deployed|overseas|doctor)|stuck\s+in\s+(nigeria|ghana|ukraine|dubai|camp)|send\s+money\s+(for\s+)?(ticket|visa|medical|emergency|treatment))/i,
+   desc:'Romance scam language patterns used to build false intimacy before financial or personal data extraction.'},
+  /* ── MEDIUM ── */
+  {id:'M01',sev:'medium',w:9,name:'Passive Income / Autopilot Claims',
+   pat:/(passive\s+(income|earning|profit)|earn\s+while\s+(you\s+)?(sleep|do\s+nothing|relax)|autopilot\s+(income|profit|earning|system)|fully\s+automated\s+(trading|profit|system))/i,
+   desc:'Passive income promises without verifiable mechanisms are prevalent in investment fraud and MLM recruitment.'},
+  {id:'M02',sev:'medium',w:8,name:'Vague Proprietary / AI System',
+   pat:/(proprietary\s+(algorithm|system|method)|ai[\s-]?powered\s+(trading|profit)|secret\s+(formula|strategy|system|signal)|exclusive\s+(method|system|access)|insider\s+(tip|secret|information))/i,
+   desc:'Unverifiable claims about secret AI or algorithmic systems are designed to avoid regulatory and public scrutiny.'},
+  {id:'M03',sev:'medium',w:8,name:'Testimonial Overload',
+   pat:/(thousands?\s+of\s+(happy\s+)?(customers?|members?|investors?|traders?)|join\s+\d[\d,]*\s+(satisfied|successful|happy)|verified\s+testimonials?|real\s+success\s+stor)/i,
+   desc:'Fabricated mass testimonials with suspiciously exact numbers are a classic social proof manipulation technique.'},
+  {id:'M04',sev:'medium',w:7,name:'Secrecy / Offshore Jurisdiction',
+   pat:/(registered\s+in\s+(seychelles|vanuatu|marshall\s+islands|belize|st\.?\s+vincent|panama|cayman\s+islands?|anguilla)|offshore\s+(account|company|entity|registered))/i,
+   desc:'Offshore registration in secrecy jurisdictions is a common structural enabler and legal shield for fraud.'},
+  {id:'M05',sev:'medium',w:7,name:'Deceptive Free Trial Trap',
+   pat:/(free\s+(trial|sign[\s-]?up|access|account).{0,80}(then|after|upgrade|subscribe|billing|charged|auto[\s-]?renew|credit\s+card))/i,
+   desc:'Free trials that auto-convert to subscriptions without prominent disclosure are a deceptive commercial pattern.'},
+  {id:'M06',sev:'medium',w:7,name:'"Risk-Free" Investment Claim',
+   pat:/(risk[\s-]?free\s+(investment|trading|profit|return)|no\s+risk\s+investment|zero[\s-]?risk|100%\s+safe\s+(investment|trading))/i,
+   desc:'"Risk-free" investment claims are illegal in most jurisdictions. All investments carry risk by definition.'},
+  /* ── LOW ── */
+  {id:'L01',sev:'low',w:5,name:'Fabricated Real-Time User Counts',
+   pat:/(\d[\d,\.]*\s+(users?|members?|investors?|traders?)\s+(online|active|joined\s+today|currently\s+investing))/i,
+   desc:'Fake real-time user count displays are a manufactured social proof and urgency tactic.'},
+  {id:'L02',sev:'low',w:4,name:'Excessive Contact Pressure',
+   pat:/(contact\s+us\s+now|chat\s+with\s+(an?\s+)?agent\s+now|live\s+support\s+24\/?7|instant\s+(response|reply)|don'?t\s+hesitate\s+to\s+contact)/i,
+   desc:'Excessive contact pressure can indicate a high-pressure sales, boiler-room, or chasing operation.'},
+  {id:'L03',sev:'low',w:3,name:'Classic Scam Phrasology',
+   pat:/(kindly\s+(do\s+the\s+needful|revert|confirm\s+same)|dear\s+(beloved\s+)?(friend|investor|partner)\s*,|i\s+am\s+writing\s+to\s+inform\s+you\s+that\s+you\s+(have\s+)?(won|been\s+selected))/i,
+   desc:'Specific phrases that appear with very high frequency in scam emails, phishing messages, and fraud communications.'},
+];
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ③ BUILT-IN BAD DOMAINS 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+const BAD_DOMAINS = [
+  {domain:'binaryoptions.com',    category:'Binary Options Scam',   confidence:'high'},
+  {domain:'forex-profits.net',    category:'Forex Scam',            confidence:'high'},
+  {domain:'cryptominer-pro.com',  category:'Fake Crypto Mining',    confidence:'high'},
+  {domain:'quickprofits247.com',  category:'Investment Fraud',      confidence:'high'},
+  {domain:'instantbitcoin.io',    category:'Crypto Scam',           confidence:'high'},
+];
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ④ BUILT-IN TYPOSQUATS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+const TYPOSQUATS = [
+  {original:'coinbase.com',     variants:['co1nbase.com','coinbas3.com','co1nbase.io','coinnbase.com','coinbaseex.com','coinbase-pro.io','coinb4se.com']},
+  {original:'binance.com',      variants:['binnance.com','binancce.com','binance-pro.com','binanace.com','binancex.com','binance-io.com']},
+  {original:'blockchain.com',   variants:['blockchian.com','block-chain.net','blockchain-info.com','blockchains.com']},
+  {original:'paypal.com',       variants:['paypa1.com','paypall.com','paypal-secure.com','paypai.com','paypa1.net']},
+  {original:'metamask.io',      variants:['metamask.com','meta-mask.io','metamaks.io','metamask-wallet.com','metamask-app.io']},
+  {original:'trustwallet.com',  variants:['trust-wallet.com','trustwalet.com','trustwallet.io','trustwallet-app.com']},
+  {original:'kucoin.com',       variants:['kucoin.io','ku-coin.com','kuco1n.com','kucoin-pro.com']},
+  {original:'opensea.io',       variants:['opensea.com','open-sea.io','opensea-nft.com','0pensea.io']},
+  {original:'luno.com',         variants:['luno.io','lun0.com','luno-app.com','lunowallet.com']},
+  {original:'quidax.com',       variants:['qu1dax.com','quidax.io','quidax-exchange.com']},
+  {original:'buycoins.africa',  variants:['buycoins.io','buycoin.africa','buycoinsafrica.com']},
+];
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ⑤ RUNTIME STATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+let S = {
+  ghPatterns:[], ghDomains:[], ghTypos:[],
+  dbLoaded:false,
+};
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ⑥ THEME  
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+function srcToggleTheme() {
+  const tool = document.getElementById('src-tool');
+  const isDark = tool.getAttribute('data-theme') === 'dark';
+  if (isDark) {
+    tool.removeAttribute('data-theme');
+    document.getElementById('src-theme-icon').textContent = '🌙';
+    document.getElementById('src-theme-lbl').textContent  = 'Dark Mode';
+    try { localStorage.setItem('src_theme','light'); } catch {}
+  } else {
+    tool.setAttribute('data-theme','dark');
+    document.getElementById('src-theme-icon').textContent = '☀️';
+    document.getElementById('src-theme-lbl').textContent  = 'Light Mode';
+    try { localStorage.setItem('src_theme','dark'); } catch {}
+  }
+}
+/* Restore saved preference on load */
+(function(){
+  try {
+    if (localStorage.getItem('src_theme') === 'dark') {
+      document.getElementById('src-tool').setAttribute('data-theme','dark');
+      document.getElementById('src-theme-icon').textContent = '☀️';
+      document.getElementById('src-theme-lbl').textContent  = 'Light Mode';
+    }
+  } catch {}
+})();
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ⑦ UTILITIES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+function srcNorm(input) {
+  input = input.trim();
+  if (!/^https?:\/\//i.test(input)) input = 'https://' + input;
+  try { return new URL(input).hostname.toLowerCase().replace(/^www\./, ''); }
+  catch { return input.replace(/^https?:\/\//i,'').replace(/^www\./i,'').split('/')[0].split('?')[0].toLowerCase(); }
+}
+
+function setPill(id, status, tip) {
+  const el = document.getElementById('pill-' + id);
+  if (!el) return;
+  el.className = 'src-pill' + (status ? ' ' + status : '');
+  if (tip) el.title = tip;
+}
+function resetPills() { ['patterns','domains','typos','blogger','rss'].forEach(id => setPill(id,'')); }
+
+function showStatus(msg) {
+  const el = document.getElementById('src-status');
+  el.style.display = 'flex';
+  document.getElementById('src-status-txt').textContent = msg;
+}
+function hideStatus() { document.getElementById('src-status').style.display = 'none'; }
+
+function toast(msg, type='error') {
+  const el = document.getElementById('src-toast');
+  el.textContent = msg;
+  el.className = 'show toast-' + type;
+  setTimeout(() => el.className = '', 3600);
+}
+
+function cacheGet(k) {
+  try {
+    const r = localStorage.getItem('src_' + k);
+    if (!r) return null;
+    const d = JSON.parse(r);
+    if (Date.now() - d.ts > (d.ttl || SRC.cacheTTL)) { localStorage.removeItem('src_' + k); return null; }
+    return d.val;
+  } catch { return null; }
+}
+function cacheSet(k, v, ttl) {
+  try { localStorage.setItem('src_' + k, JSON.stringify({val:v, ts:Date.now(), ttl:ttl||SRC.cacheTTL})); } catch {}
+}
+
+/* Levenshtein distance for fuzzy typosquat detection */
+function lev(a, b) {
+  const m=a.length, n=b.length;
+  const dp=Array.from({length:m+1},(_,i)=>[i,...Array(n).fill(0)]);
+  for(let j=0;j<=n;j++) dp[0][j]=j;
+  for(let i=1;i<=m;i++) for(let j=1;j<=n;j++)
+    dp[i][j]=a[i-1]===b[j-1]?dp[i-1][j-1]:1+Math.min(dp[i-1][j],dp[i][j-1],dp[i-1][j-1]);
+  return dp[m][n];
+}
+
+/* Safe HTML escape */
+function esc(s) {
+  if (!s) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+/* External link SVG */
+function extSvg() {
+  return `<svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+    <path d="M5 2H2a1 1 0 00-1 1v7a1 1 0 001 1h7a1 1 0 001-1V7M7 1h4m0 0v4m0-4L5.5 6.5"
+    stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ⑧ DATA FETCHERS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+/* A — GitHub JSON databases */
+async function fetchGithubDb() {
+  const cached = cacheGet('github_db');
+  if (cached) {
+    S.ghPatterns = cached.patterns || [];
+    S.ghDomains  = cached.domains  || [];
+    S.ghTypos    = cached.typos    || [];
+    S.dbLoaded   = true;
+    setPill('patterns','ok',`${S.ghPatterns.length} remote patterns (cached)`);
+    setPill('domains','ok', `${S.ghDomains.length} remote domains (cached)`);
+    setPill('typos','ok',   `${S.ghTypos.length} remote typosquats (cached)`);
+    return;
+  }
+  setPill('patterns','loading'); setPill('domains','loading'); setPill('typos','loading');
+  const files = {
+    patterns: `${SRC.ghRaw}/scam-patterns.json`,
+    domains:  `${SRC.ghRaw}/bad-domains.json`,
+    typos:    `${SRC.ghRaw}/typosquats.json`,
+  };
+  const res = await Promise.allSettled(
+    Object.entries(files).map(([k,url])=>
+      fetch(url,{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(d=>[k,d])
+    )
+  );
+  const db = {};
+  for (const r of res) if (r.status==='fulfilled' && r.value) { const [k,d]=r.value; if(d) db[k]=d; }
+
+  S.ghPatterns = db.patterns?.patterns || db.patterns || [];
+  S.ghDomains  = db.domains?.domains   || db.domains  || [];
+  S.ghTypos    = db.typos?.typosquats  || db.typos    || [];
+  S.dbLoaded   = true;
+
+  setPill('patterns', S.ghPatterns.length>0?'ok':'warn', `${S.ghPatterns.length} remote patterns`);
+  setPill('domains',  S.ghDomains.length>0?'ok':'warn',  `${S.ghDomains.length} remote domains`);
+  setPill('typos',    S.ghTypos.length>0?'ok':'warn',    `${S.ghTypos.length} remote typosquats`);
+  cacheSet('github_db', {patterns:S.ghPatterns, domains:S.ghDomains, typos:S.ghTypos}, SRC.dbCacheTTL);
+}
+
+/* B — Blogger JSONP feed */
+function fetchBlogger(domain) {
+  return new Promise(resolve => {
+    const cached = cacheGet('blogger_feed');
+    if (cached) { resolve(filterBlogPosts(cached, domain)); return; }
+    const cb = '_src_b_' + Date.now();
+    const timer = setTimeout(() => {
+      window[cb] = null; setPill('blogger','warn','Timeout after 7s'); resolve([]);
+    }, 7000);
+    window[cb] = function(data) {
+      clearTimeout(timer); window[cb] = null;
+      const entries = data?.feed?.entry || [];
+      cacheSet('blogger_feed', entries);
+      resolve(filterBlogPosts(entries, domain));
+    };
+    const s = document.createElement('script');
+    s.src = `${SRC.blogUrl}/feeds/posts/default/-/scam?alt=json-in-script&callback=${cb}&max-results=50`;
+    s.onerror = () => { clearTimeout(timer); window[cb]=null; setPill('blogger','error','Script error'); resolve([]); };
+    document.head.appendChild(s);
+    setTimeout(()=>{ try{document.head.removeChild(s);}catch{} }, 9000);
+  });
+}
+function filterBlogPosts(entries, domain) {
+  const d = domain.toLowerCase(), n = domain.replace(/\./g,' ').toLowerCase();
+  return entries
+    .filter(e => {
+      const h = ((e.title?.$t||'')+(e.summary?.$t||'')+(e.content?.$t||'')).toLowerCase();
+      return h.includes(d) || h.includes(n);
+    })
+    .map(e => ({
+      title:   e.title?.$t || 'Untitled',
+      url:     e.link?.find(l=>l.rel==='alternate')?.href || '#',
+      date:    e.published?.$t ? new Date(e.published.$t).toLocaleDateString('en-GB',{year:'numeric',month:'short',day:'numeric'}) : '',
+      snippet: (e.summary?.$t||'').replace(/<[^>]+>/g,'').slice(0,120),
+    }));
+}
+
+/* C — RSS via rss2json.com */
+async function fetchRSS(domain) {
+  const ckey = 'rss_' + domain;
+  const cached = cacheGet(ckey);
+  if (cached) return cached;
+  const root = domain.split('.')[0];
+  const hits = [];
+  await Promise.allSettled(SRC.rssFeeds.map(async feed => {
+    try {
+      const key = SRC.rss2jsonKey ? `&api_key=${SRC.rss2jsonKey}` : '';
+      const r = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed)}${key}&count=25`);
+      if (!r.ok) return;
+      const data = await r.json();
+      if (!data.items) return;
+      for (const item of data.items) {
+        const text = ((item.title||'')+(item.description||'')).toLowerCase();
+        if (text.includes(domain)||text.includes(root)) {
+          hits.push({
+            title:  item.title||'Untitled',
+            url:    item.link||'#',
+            source: data.feed?.title || new URL(feed).hostname,
+            date:   item.pubDate ? new Date(item.pubDate).toLocaleDateString('en-GB',{year:'numeric',month:'short',day:'numeric'}) : '',
+          });
+        }
+      }
+    } catch {}
+  }));
+  cacheSet(ckey, hits);
+  return hits;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ⑨ ANALYSIS ENGINE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+function checkBadDomain(domain) {
+  return [...BAD_DOMAINS, ...S.ghDomains].find(d => d.domain===domain || domain.endsWith('.'+d.domain)) || null;
+}
+
+function checkTyposquat(domain) {
+  const ghNorm = S.ghTypos.map(t=>({
+    original: t.target||t.original||'',
+    variants: t.variants||(t.fake?[t.fake]:[]),
+  }));
+  const hits = [];
+  for (const entry of [...TYPOSQUATS, ...ghNorm]) {
+    if (!entry.original) continue;
+    if (entry.variants?.includes(domain)) { hits.push({original:entry.original, type:'exact'}); continue; }
+    const d = lev(domain, entry.original);
+    const thr = Math.max(1, Math.floor(entry.original.length * 0.15));
+    if (d>0 && d<=thr) hits.push({original:entry.original, type:'fuzzy', distance:d});
+  }
+  return hits;
+}
+
+function runPatterns(text) {
+  if (!text || text.trim().length < 5) return [];
+  const ghMapped = S.ghPatterns.map(p=>({
+    ...p, sev:p.severity||p.sev||'info', w:p.weight||p.w||5,
+    pat: p.regex ? new RegExp(p.regex,'gi') : p.pat,
+    desc: p.description||p.desc||'',
+  }));
+  return [...PATTERNS, ...ghMapped].reduce((acc, p) => {
+    const re = p.pat instanceof RegExp ? p.pat : null;
+    if (!re) return acc;
+    try {
+      const m = text.match(re);
+      if (m) acc.push({...p, matchText: m[0].slice(0,80), source:'Pattern Library'});
+    } catch {}
+    return acc;
+  }, []);
+}
+
+function calcScore(flags) {
+  return Math.min(100, Math.round(flags.reduce((s,f)=>s+(f.w||0),0)));
+}
+
+function scoreColor(score) {
+  if (score>=70) return 'var(--red)';
+  if (score>=45) return 'var(--amber)';
+  if (score>=20) return 'var(--violet)';
+  return 'var(--green)';
+}
+
+function verdict(score) {
+  if (score>=70) return {label:'HIGH RISK — Likely Scam', desc:'Multiple critical red flags detected. Strongly advise against engaging or transferring any funds to this platform.'};
+  if (score>=45) return {label:'SUSPICIOUS — Proceed With Extreme Caution', desc:'Several warning signs detected. Verify through official channels and independent sources before any financial commitment.'};
+  if (score>=20) return {label:'SOME CONCERNS — Do Your Research', desc:'Minor concerns detected. Independently verify the platform\'s legitimacy before engaging further.'};
+  return {label:'Appears Clean', desc:'No significant red flags found in our databases or pattern library. Always verify independently — no automated tool is infallible.'};
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ⑩ UI RENDERERS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+function renderGauge(score) {
+  const r=56, cx=84, cy=84, circ=Math.PI*r, col=scoreColor(score);
+  const path=`M ${cx-r} ${cy} A ${r} ${r} 0 0 1 ${cx+r} ${cy}`;
+  return `<div class="src-gauge-wrap">
+    <svg class="src-gauge-svg" viewBox="0 0 168 94" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Risk score gauge">
+      <path class="src-gauge-track" d="${path}"/>
+      <path class="src-gauge-fill" id="src-garc" d="${path}"
+        stroke="${col}" stroke-dasharray="${circ}" stroke-dashoffset="${circ}"
+        style="filter:drop-shadow(0 0 7px ${col})"/>
+    </svg>
+    <div class="src-gauge-num" id="src-gnum" style="color:${col}">0</div>
+    <div class="src-gauge-sub">Risk Score</div>
+  </div>`;
+}
+
+function animateGauge(score) {
+  const r=56, circ=Math.PI*r;
+  const arc=document.getElementById('src-garc');
+  const num=document.getElementById('src-gnum');
+  if (!arc||!num) return;
+  setTimeout(()=>{ arc.style.strokeDashoffset = circ - (score/100)*circ; }, 60);
+  let cur=0;
+  const step=score/60;
+  const t=setInterval(()=>{ cur=Math.min(score,cur+step); num.textContent=Math.round(cur); if(cur>=score) clearInterval(t); },16);
+}
+
+function srcCard(icon, name, val, sub, status) {
+  return `<div class="src-src-card ${status}">
+    <div class="src-src-card-top"><span class="src-src-icon">${icon}</span><span class="src-src-name">${esc(name)}</span></div>
+    <div class="src-src-val">${esc(val)}</div>
+    <div class="src-src-sub">${esc(sub)}</div>
+  </div>`;
+}
+
+function flagCard(f, delay) {
+  const sev = (f.sev||'info').toLowerCase();
+  const blogLinks = (f.blogLinks||[]).map(p=>
+    `<a href="${esc(p.url)}" target="_blank" rel="noopener" class="src-flag-link">📖 ${esc(p.title.slice(0,50))}</a>`
+  ).join('');
+  const hasFooter = f.matchText || blogLinks || f.source;
+  return `<div class="src-flag ${sev}" style="animation-delay:${delay}s">
+    <div class="src-flag-hd">
+      <span class="src-badge ${sev}">${sev.toUpperCase()}</span>
+      <div class="src-flag-title">${esc(f.name)}</div>
+    </div>
+    <div class="src-flag-desc">${esc(f.desc)}</div>
+    ${hasFooter?`<div class="src-flag-footer">
+      ${f.source?`<span>src: ${esc(f.source)}</span>`:''}
+      ${f.matchText?`<span class="src-match-chip">"${esc(f.matchText)}"</span>`:''}
+      ${blogLinks}
+    </div>`:''}
+  </div>`;
+}
+
+function renderResults(data) {
+  const {domain, flags, blogPosts, rssHits, score, fromCache} = data;
+  const v = verdict(score);
+  const col = scoreColor(score);
+  const sorted = [...flags].sort((a,b)=>(b.w||0)-(a.w||0));
+  const nCrit = flags.filter(f=>f.sev==='critical').length;
+  const nHigh = flags.filter(f=>f.sev==='high').length;
+  const nPat  = flags.filter(f=>f.source==='Pattern Library').length;
+  const nRep  = blogPosts.length + rssHits.length;
+
+  const enc = encodeURIComponent;
+  const EXT = [
+    {l:'ScamAdviser',      u:`https://www.scamadviser.com/check-website/${domain}`},
+    {l:'Google Safe',      u:`https://transparencyreport.google.com/safe-browsing/search?url=${enc(domain)}`},
+    {l:'URLVoid',          u:`https://www.urlvoid.com/scan/${domain}/`},
+    {l:'VirusTotal',       u:`https://www.virustotal.com/gui/domain/${domain}`},
+    {l:'WHOIS',            u:`https://who.is/whois/${domain}`},
+    {l:'Web Archive',      u:`https://web.archive.org/web/*/${domain}`},
+    {l:'Google Reports',   u:`https://www.google.com/search?q=${enc('"'+domain+'" scam OR fraud OR review')}`},
+  ];
+
+  const totalDom = BAD_DOMAINS.length + S.ghDomains.length;
+  const totalTyp = TYPOSQUATS.length  + S.ghTypos.length;
+  const totalPat = PATTERNS.length    + S.ghPatterns.length;
+
+  let h = `<div>`;
+
+  if (fromCache) h += `<div class="src-cache-badge"><div class="src-cache-dot"></div>Loaded from local cache · refreshes hourly</div>`;
+
+  h += `<div class="src-domain-pill">🌐 Analyzed: <strong>${esc(domain)}</strong>
+    <span class="src-domain-ts">${new Date().toLocaleString()}</span></div>`;
+
+  /* Score card */
+  h += `<div class="src-score-card">
+    ${renderGauge(score)}
+    <div class="src-score-meta">
+      <div class="src-verdict" style="color:${col}">${v.label}</div>
+      <div class="src-verdict-desc">${v.desc}</div>
+      <div class="src-score-stats">
+        <div class="src-stat"><div class="src-stat-val" style="color:var(--red)">${nCrit}</div><div class="src-stat-lbl">Critical</div></div>
+        <div class="src-stat"><div class="src-stat-val" style="color:var(--amber)">${nHigh}</div><div class="src-stat-lbl">High</div></div>
+        <div class="src-stat"><div class="src-stat-val" style="color:var(--blue)">${nPat}</div><div class="src-stat-lbl">Patterns</div></div>
+        <div class="src-stat"><div class="src-stat-val" style="color:var(--text-dim)">${nRep}</div><div class="src-stat-lbl">Reports</div></div>
+      </div>
+    </div>
+  </div>`;
+
+  /* Source cards */
+  h += `<div class="src-src-grid">
+    ${srcCard('🗄️','GitHub DB', S.dbLoaded?'Connected':'Offline', `${totalDom} domains · ${totalTyp} typosquats`, S.dbLoaded?'ok':'warn')}
+    ${srcCard('📝','Blog Posts', blogPosts.length>0?`${blogPosts.length} Found`:'None Found', 'NaijaSmartHub reports', blogPosts.length>0?'bad':'ok')}
+    ${srcCard('📡','RSS Feeds', rssHits.length>0?`${rssHits.length} Found`:'None Found', `${SRC.rssFeeds.length} feeds queried`, rssHits.length>0?'bad':'ok')}
+    ${srcCard('🔬','Pattern Scan', nPat>0?`${nPat} Matched`:'No Matches', `${totalPat} signatures`, nPat>5?'bad':nPat>0?'warn':'ok')}
+  </div>`;
+
+  /* External links */
+  h += `<div class="src-ext-wrap"><div class="src-ext-label">External Verification</div>
+    <div class="src-ext-links">${EXT.map(l=>`<a href="${esc(l.u)}" target="_blank" rel="noopener" class="src-ext-btn">${extSvg()} ${esc(l.l)}</a>`).join('')}</div>
+  </div>`;
+
+  /* Red Flags */
+  if (sorted.length>0) {
+    h += `<div class="src-section-hd">Red Flags Detected <span class="src-count">${sorted.length}</span></div>`;
+    h += `<div class="src-flags-list">${sorted.map((f,i)=>flagCard(f,i*0.06)).join('')}</div>`;
+  } else {
+    h += `<div class="src-section-hd">Red Flags</div>
+      <div class="src-empty"><div class="src-empty-icon">✅</div>
+      <div class="src-empty-text">No red flags detected in our databases.<br>Paste site text above for a deeper pattern-level scan.</div></div>`;
+  }
+
+  /* Blog posts */
+  if (blogPosts.length>0) {
+    h += `<div class="src-section-hd">Blog Reports <span class="src-count">${blogPosts.length}</span></div>`;
+    h += `<div class="src-posts">${blogPosts.map(p=>`
+      <a href="${esc(p.url)}" target="_blank" rel="noopener" class="src-post-a">
+        <span class="src-post-ico">📰</span>
+        <div><div class="src-post-title">${esc(p.title)}</div>
+        <div class="src-post-meta">${esc(p.date)}${p.snippet?' · '+esc(p.snippet)+'…':''}</div></div>
+        <span class="src-post-arrow">›</span>
+      </a>`).join('')}</div>`;
+  }
+
+  /* RSS hits */
+  if (rssHits.length>0) {
+    h += `<div class="src-section-hd">External Reports <span class="src-count">${rssHits.length}</span></div>`;
+    h += `<div class="src-posts">${rssHits.map(r=>`
+      <a href="${esc(r.url)}" target="_blank" rel="noopener" class="src-post-a">
+        <span class="src-post-ico">🔔</span>
+        <div><div class="src-post-title">${esc(r.title)}</div>
+        <div class="src-post-meta">${esc(r.source)}${r.date?' · '+esc(r.date):''}</div></div>
+        <span class="src-post-arrow">›</span>
+      </a>`).join('')}</div>`;
+  }
+
+  h += `</div>`;
+
+  const container = document.getElementById('src-results');
+  container.innerHTML = h;
+  container.className = 'visible';
+  requestAnimationFrame(() => animateGauge(score));
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ⑪ MAIN ORCHESTRATOR
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+async function srcRunCheck() {
+  const raw = document.getElementById('src-url').value.trim();
+  if (!raw) { toast('Please enter a URL or platform name.'); return; }
+
+  const domain = srcNorm(raw);
+  if (!domain || domain.length < 3) { toast('Could not parse a valid domain. Try: example.com'); return; }
+
+  const btn  = document.getElementById('src-btn');
+  const btxt = document.getElementById('src-btn-txt');
+  btn.disabled = true; btn.classList.add('loading'); btxt.textContent = '⬡ Scanning…';
+  document.getElementById('src-results').className = '';
+  document.getElementById('src-results').innerHTML = '';
+  resetPills();
+
+  const pastedText = document.getElementById('src-paste').value.trim();
+
+  /* Full-analysis cache check (skip when paste text provided) */
+  if (!pastedText) {
+    const cached = cacheGet('analysis_' + domain);
+    if (cached) {
+      hideStatus(); btn.disabled=false; btn.classList.remove('loading'); btxt.textContent='▶ Analyze';
+      renderResults({...cached, fromCache:true});
+      document.getElementById('src-results').scrollIntoView({behavior:'smooth', block:'start'});
+      return;
+    }
+  }
+
+  const flags = [];
+
+  /* Step 1: GitHub databases */
+  showStatus('Loading threat intelligence databases from GitHub…');
+  try { await fetchGithubDb(); } catch { /* use built-ins */ }
+
+  /* Step 2: Bad domain */
+  showStatus(`Checking domain reputation: ${domain}…`);
+  const bad = checkBadDomain(domain);
+  if (bad) flags.push({
+    sev:'critical', w:40,
+    name:`Domain in Scam Database: ${domain}`,
+    desc:`"${domain}" is listed in the known-bad-domains database as: ${bad.category}. Confidence: ${bad.confidence||'high'}.`,
+    source:'GitHub Scam Domain DB',
+  });
+
+  /* Step 3: Typosquats (exact + Levenshtein fuzzy) */
+  const typos = checkTyposquat(domain);
+  for (const t of typos) flags.push({
+    sev:'critical', w:t.type==='exact'?35:25,
+    name:`Typosquatting "${t.original}"`,
+    desc:`"${domain}" appears to impersonate the legitimate domain "${t.original}" ` +
+         (t.type==='exact'?'(exact variant list match).':
+          `(Levenshtein distance: ${t.distance} — highly similar name). `) +
+         'This technique is widely used in phishing and fraud attacks.',
+    source:'Typosquat Database',
+  });
+
+  /* Step 4: Pattern scan on pasted text */
+  if (pastedText) {
+    showStatus(`Scanning text against ${PATTERNS.length + S.ghPatterns.length} pattern signatures…`);
+    flags.push(...runPatterns(pastedText));
+  }
+
+  /* Step 5: Blogger posts */
+  showStatus('Querying NaijaSmartHub scam blog reports…');
+  setPill('blogger','loading');
+  let blogPosts = [];
+  try {
+    blogPosts = await fetchBlogger(domain);
+    setPill('blogger', blogPosts.length>0?'warn':'ok', `${blogPosts.length} posts found`);
+  } catch { setPill('blogger','error','Fetch failed'); }
+
+  if (blogPosts.length>0) flags.push({
+    sev:'high', w:Math.min(20,blogPosts.length*7),
+    name:`${blogPosts.length} Blog Report(s) Found`,
+    desc:`Found ${blogPosts.length} scam-tagged post(s) on NaijaSmartHub mentioning "${domain}".`,
+    source:'NaijaSmartHub Blog',
+    blogLinks: blogPosts.slice(0,3),
+  });
+
+  /* Step 6: RSS intelligence */
+  showStatus('Querying external scam intelligence feeds…');
+  setPill('rss','loading');
+  let rssHits = [];
+  try {
+    rssHits = await fetchRSS(domain);
+    setPill('rss', rssHits.length>0?'warn':'ok', `${rssHits.length} mentions found`);
+  } catch { setPill('rss','error','Fetch failed'); }
+
+  if (rssHits.length>0) flags.push({
+    sev:'high', w:Math.min(15,rssHits.length*5),
+    name:`${rssHits.length} External RSS Report(s)`,
+    desc:`Found ${rssHits.length} mention(s) of "${domain}" across external scam-reporting RSS feeds.`,
+    source:'RSS Intelligence Feeds',
+  });
+
+  /* Step 7: Score + cache */
+  const score = calcScore(flags);
+  if (!pastedText) cacheSet('analysis_' + domain, {domain, flags, blogPosts, rssHits, score});
+
+  /* Step 8: Render */
+  hideStatus();
+  btn.disabled=false; btn.classList.remove('loading'); btxt.textContent='▶ Analyze';
+  renderResults({domain, flags, blogPosts, rssHits, score, fromCache:false});
+  document.getElementById('src-results').scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ⑫ SIMPLE UI HANDLERS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+function srcTogglePaste(cb) {
+  document.getElementById('src-paste-area').classList.toggle('open', cb.checked);
+}
+
+document.getElementById('src-url').addEventListener('keydown', e => {
+  if (e.key === 'Enter') srcRunCheck();
+});
+</script>
+   </main>
+</body>
+<script> var prevScrollpos=window.pageYOffset;window.onscroll=function(){var currentScrollPos=window.pageYOffset;if(prevScrollpos>currentScrollPos){document.getElementById("header").classList.remove('show')}else{document.getElementById("header").classList.add('show')}
+prevScrollpos=currentScrollPos} </script>
+</HTML>
